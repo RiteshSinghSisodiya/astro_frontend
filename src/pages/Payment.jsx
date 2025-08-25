@@ -43,7 +43,7 @@ export default function Payment() {
         key: import.meta.env.VITE_RAZORPAY_KEY_ID,
         amount: order.amount,
         currency: 'INR',
-        name: 'AstroWorld',
+        name: 'Aura jyotish kendra',
         description: 'Astrology Consultation',
         order_id: order.id,
         prefill: {
