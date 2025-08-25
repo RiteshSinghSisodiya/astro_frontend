@@ -5,7 +5,7 @@ import astroBg from '../assets/astro.jpg'
 export default function Payment() {
   const { state } = useLocation()
   const navigate = useNavigate()
-  const amount = 99 
+  const amount = 199 
   const [formData, setFormData] = useState(() => ({
     ...state?.formData,
     amount: amount
