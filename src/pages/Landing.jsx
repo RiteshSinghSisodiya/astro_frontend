@@ -2,33 +2,33 @@ import { Link } from "react-router-dom"
 import { useTranslation } from "react-i18next"
 import LanguageSelector from "../components/LanguageSelector"
 import zodiacImg from "../assets/zodiac.jpg"
-import bgImg from "../assets/background.webp"   // <-- your uploaded image
+import bgImg from "../assets/background.webp"   
 
 export default function Landing() {
   const { t } = useTranslation()
 
   return (
     <section className="relative overflow-hidden">
-      {/* Background Image with Blur + Overlay */}
+     
       <div className="absolute inset-0 -z-10">
         <img
           src={bgImg}
           alt="Astrology background"
           className="w-full h-full object-cover blur-sm"
         />
-        <div className="absolute inset-0 bg-black/70" /> {/* Dark overlay for readability */}
+        <div className="absolute inset-0 bg-black/70" /> 
       </div>
 
       <div className="max-w-6xl mx-auto px-4 py-16 text-white">
-        {/* Header */}
+        
         <div className="flex items-center justify-between mb-12">
           <h1 className="text-3xl font-semibold tracking-wide">Aura Jyotish Kendra</h1>
           <LanguageSelector />
         </div>
 
-        {/* Hero Section */}
+        
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
+         
           <div>
             <p className="text-sm text-yellow-300 mb-3 italic">
               Honoring the Legacy of Late Pandit Kalyan Dutt Sharma: A Renowned Mahamahopadhyaya and Scholar
@@ -54,7 +54,7 @@ export default function Landing() {
             </Link>
           </div>
 
-          {/* Right Card */}
+          
           <div className="rounded-2xl bg-white/10 backdrop-blur-md p-6 shadow-lg">
             <img
               className="w-full h-72 object-cover rounded-xl shadow-lg"
