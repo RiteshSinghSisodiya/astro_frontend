@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
       <h2 className="font-semibold mt-4">Data Protection</h2>
       <p>We use reasonable security measures but cannot guarantee 100% online protection.</p>
 
-      <h2 className="font-semibold mt-4">Third-Party Services</h2>
+      <h2 className="font-semibold mt-4">Third-Party Services.</h2>
       <p>Payment and communication may involve trusted third-party providers bound to keep your data confidential.</p>
 
       <p className="mt-4">Questions? <a href="/contact" className="text-blue-600 underline">Contact us</a>.</p>
