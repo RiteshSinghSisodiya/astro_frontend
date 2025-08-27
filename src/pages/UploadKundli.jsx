@@ -5,40 +5,39 @@ export default function UploadKundli() {
   const [file, setFile] = useState(null);
   const [msg, setMsg] = useState("");
   const [searchParams] = useSearchParams();
-  const email = searchParams.get("email");
 
-const handleUpload = async () => {
-  if (!file) {
-    setMsg("⚠️ Please select a file first.");
-    return;
-  }
+  const email = searchParams.get("email"); // still used internally
+  const name = searchParams.get("name");   // shown to pandit
 
-  setMsg("📤 Sending kundli..."); // Show sending message
+  const handleUpload = async () => {
+    if (!file) {
+      setMsg("⚠️ Please select a file first.");
+      return;
+    }
 
-  const formData = new FormData();
-  formData.append("kundli", file); // name matches multer's upload.single("kundli")
-  formData.append("email", email);
+    setMsg("📤 Sending kundli...");
 
-  try {
-    const res = await fetch("https://astro-backend-txdw.onrender.com/api/upload-kundli", {
-      method: "POST",
-      body: formData
-    });
+    const formData = new FormData();
+    formData.append("kundli", file);
+    formData.append("email", email);
 
-    const data = await res.json();
-    setMsg("✅ Kundli sent successfully!");
+    try {
+      const res = await fetch("https://astro-backend-txdw.onrender.com/api/upload-kundli", {
+        method: "POST",
+        body: formData
+      });
 
-    // Redirect to home after 2 seconds
-    setTimeout(() => {
-      window.location.href = "/";
-    }, 2000);
+      await res.json();
+      setMsg("✅ Kundli sent successfully!");
 
-  } catch (error) {
-    console.error(error);
-    setMsg("❌ Error sending kundli.");
-  }
-};
-
+      setTimeout(() => {
+        window.location.href = "/";
+      }, 2000);
+    } catch (error) {
+      console.error(error);
+      setMsg("❌ Error sending kundli.");
+    }
+  };
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-purple-700 via-indigo-800 to-blue-900 p-6">
@@ -47,7 +46,7 @@ const handleUpload = async () => {
           Upload Kundli PDF
         </h2>
         <p className="text-center text-gray-600 mb-6">
-          for <span className="font-semibold text-indigo-600">{email}</span>
+          for <span className="font-semibold text-indigo-600">{name}</span>
         </p>
 
         <div className="flex flex-col items-center gap-4">
