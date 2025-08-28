@@ -7,6 +7,7 @@ import TermsAndConditions from "./pages/legal/TermsAndConditions";
 import PrivacyPolicy from "./pages/legal/PrivacyPolicy";
 import RefundPolicy from "./pages/legal/RefundPolicy";
 import ContactUs from "./pages/legal/ContactUs";
+import logo from "./assets/logo.webp"; // Ensure you have a logo image in the assets folder
 
 export default function App() {
   return (
@@ -17,12 +18,12 @@ export default function App() {
       {/* Header with Gradient */}
       <header
         className="w-full px-6 py-4 flex items-center justify-between 
-        bg-gradient-to-r from-indigo-700 via-purple-700 to-pink-600 shadow-lg"
+        bg-gradient-to-br from-[#fdf6f0] via-white to-[#f3e8ff] shadow-md"
       >
-        <Link to="/" className="text-2xl font-bold text-white">
-          Aura Jyotish Kendra
+        <Link to="/" className="flex items-center gap-2">
+          <img src={logo} alt="Aura Jyotish Kendra" className="h-10 md:h-12 lg:h-14 w-auto" />
         </Link>
-        <nav className="flex items-center gap-4">
+        <nav className="flex items-center gap-4 pr-10 gap-4">
           <Link
             to="/"
             className="bg-gradient-to-r from-green-400 via-emerald-500 to-teal-500 
@@ -56,8 +57,8 @@ export default function App() {
 
       {/* Footer with Gradient */}
       <footer
-        className="p-4 text-center text-sm text-white 
-        bg-gradient-to-r from-indigo-700 via-purple-700 to-pink-600 shadow-inner"
+        className="p-4 text-center text-sm text-gray-700 
+        bg-gradient-to-br from-[#fdf6f0] via-white to-[#f3e8ff] shadow-inner"
       >
         <div className="flex justify-center space-x-6 mb-2">
           <Link to="/terms" className="hover:underline">
