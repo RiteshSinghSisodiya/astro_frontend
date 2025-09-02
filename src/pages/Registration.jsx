@@ -1,9 +1,11 @@
 import { useState, useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { Country, State, City } from "country-state-city";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,useLocation } from "react-router-dom";
 
 export default function Registration() {
+  const {state} = useLocation();
+  console.log(state);
   const { t } = useTranslation();
   const navigate = useNavigate();
 
@@ -36,7 +38,12 @@ export default function Registration() {
     const allFilled = Object.values(formData).every(Boolean);
     if (!allFilled) return alert("Please fill all fields");
 
-    navigate("/payment", { state: { formData } });
+    navigate("/payment", { 
+      state: { 
+        formData, 
+        ...state 
+      }  
+    });
   };
 
   return (

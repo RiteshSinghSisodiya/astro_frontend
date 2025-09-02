@@ -8,6 +8,7 @@ import PrivacyPolicy from "./pages/legal/PrivacyPolicy";
 import RefundPolicy from "./pages/legal/RefundPolicy";
 import ContactUs from "./pages/legal/ContactUs";
 import logo from "./assets/logo.webp"; // Ensure you have a logo image in the assets folder
+import Services from "./pages/Service";
 
 export default function App() {
   return (
@@ -24,20 +25,9 @@ export default function App() {
           <img src={logo} alt="Aura Jyotish Kendra" className="h-10 md:h-12 lg:h-14 w-auto" />
         </Link>
         <nav className="flex items-center gap-4 pr-10 gap-4">
-          <Link
-            to="/"
-            className="bg-gradient-to-r from-green-400 via-emerald-500 to-teal-500 
-              text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:scale-105 transition"
-          >
-            Home
-          </Link>
-          <Link
-            to="/register"
-            className="bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 
-              text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:scale-105 transition"
-          >
-            Register
-          </Link>
+          <Link to={'/'} className="text-lg hover:text-blue-400 transition delay-150 duration-300 ease-in-out hover:scale-110 px-2">Home</Link>
+          <Link to={'/service'} className="text-lg hover:text-blue-400 transition delay-150 duration-300 ease-in-out hover:scale-110 px-2">Services</Link>
+          <Link to={'/register'} className="text-lg hover:text-blue-400 transition delay-150 duration-300 ease-in-out hover:scale-110 px-2">Registration</Link>
         </nav>
       </header>
 
@@ -52,6 +42,7 @@ export default function App() {
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/refund" element={<RefundPolicy />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/service" element={<Services />} />
         </Routes>
       </main>
 
