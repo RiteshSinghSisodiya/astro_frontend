@@ -3,16 +3,14 @@ import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import astroBg from '../assets/astro.jpg'
 
-
 const SERVICES = [
   { id: 'kundli_reading', price: 2100 },
-  { id: 'kundli_making', price: 501 },
   { id: 'marriage_matching', price: 3100 },
-  { id: 'career_guidance', price: 501 },
-  { id: 'business_suggestions', price: 501 },
-  { id: 'business_name', price: 501 },
-  { id: 'gemstone_recommendation', price: 501 },
-  { id: 'remedies_mantras', price: 501 }
+  { id: 'business', price: 501 },
+  { id: 'ratna_suggestion', price: 501 },
+  { id: 'all_ratna', price: 1500 }, // you can adjust price as needed
+  { id: 'remedies', price: 501 }
+
 ]
 
 export default function Services() {
@@ -23,11 +21,11 @@ export default function Services() {
   const startBooking = (svc) => {
     setActive(svc)
     setTimeout(() => {
-      navigate('/register', { 
-        state: { 
-          selectedService: t(`services.${svc.id}.name`), 
-          price: svc.price 
-        } 
+      navigate('/register', {
+        state: {
+          selectedService: t(`services.${svc.id}.name`),
+          price: svc.price
+        }
       })
     }, 800)
   }
@@ -62,7 +60,9 @@ export default function Services() {
                 {t(`services.${svc.id}.description`)}
               </p>
               {active?.id === svc.id && (
-                <p className="mt-3 text-xs opacity-100">{t("opening_form") || "Opening form…"}</p>
+                <p className="mt-3 text-xs opacity-100">
+                  {t("opening_form") || "Opening form…"}
+                </p>
               )}
             </button>
           ))}

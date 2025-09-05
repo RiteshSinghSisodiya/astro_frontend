@@ -9,7 +9,7 @@ export default function Payment() {
   const amount = state?.price || 1
   const [formData, setFormData] = useState(() => ({
     ...state?.formData,
-    amount: state.price
+    amount: amount
   }))
   const [loading, setLoading] = useState(false)
 

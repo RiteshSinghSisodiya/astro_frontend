@@ -40,6 +40,8 @@ export default function Landing() {
               <li>• {t("astro_points_p1")}</li>
               <li>• {t("astro_points_p2")}</li>
               <li>• {t("astro_points_p3")}</li>
+              <li>• {t("experience_years")}</li>
+              <li>• {t("kundli_count")}</li>
             </ul>
 
             <Link to="/register">
