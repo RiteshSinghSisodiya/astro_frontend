@@ -5,11 +5,13 @@ import astroBg from '../assets/astro.jpg'
 
 const SERVICES = [
   { id: 'kundli_reading', price: 2100 },
+  { id: 'kundli_making', price: 501 }, 
   { id: 'marriage_matching', price: 3100 },
   { id: 'business', price: 501 },
+  { id: 'remedies', price: 501 },
   { id: 'ratna_suggestion', price: 501 },
-  { id: 'all_ratna', price: 1500 }, // you can adjust price as needed
-  { id: 'remedies', price: 501 }
+  { id: 'all_ratna', price: 1500 }, 
+  
 
 ]
 

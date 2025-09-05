@@ -7,8 +7,9 @@ import TermsAndConditions from "./pages/legal/TermsAndConditions";
 import PrivacyPolicy from "./pages/legal/PrivacyPolicy";
 import RefundPolicy from "./pages/legal/RefundPolicy";
 import ContactUs from "./pages/legal/ContactUs";
-import logo from "./assets/logo.webp"; // Ensure you have a logo image in the assets folder
+import logo from "./assets/logo.webp"; 
 import Services from "./pages/Service";
+import AboutUs from "./pages/AboutUs";
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
           <Link to={'/'} className="text-lg hover:text-blue-400 transition delay-150 duration-300 ease-in-out hover:scale-110 px-2">Home</Link>
           <Link to={'/service'} className="text-lg hover:text-blue-400 transition delay-150 duration-300 ease-in-out hover:scale-110 px-2">Services</Link>
           <Link to={'/register'} className="text-lg hover:text-blue-400 transition delay-150 duration-300 ease-in-out hover:scale-110 px-2">Registration</Link>
+          <Link to={'/aboutus'} className="text-lg hover:text-blue-400 transition delay-150 duration-300 ease-in-out hover:scale-110 px-2">AboutUs</Link>
         </nav>
       </header>
 
@@ -43,6 +45,7 @@ export default function App() {
           <Route path="/refund" element={<RefundPolicy />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/service" element={<Services />} />
+          <Route path="/aboutus" element={<AboutUs />} />
         </Routes>
       </main>
 
