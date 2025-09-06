@@ -36,7 +36,7 @@ export default function ContactUs() {
           href="mailto:support@aurajyotishkendra.com"
           className="text-blue-600 underline"
         >
-          {/* support@aurajyotishkendra.com */}
+          support@aurajyotishkendra.com
         </a>
       </p>
 
