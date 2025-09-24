@@ -11,6 +11,7 @@ import ContactUs from "./pages/legal/ContactUs";
 import logo from "./assets/logo.webp";
 import Services from "./pages/Service";
 import AboutUs from "./pages/AboutUs";
+import Newpay from "./pages/Newpay";
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,7 +32,7 @@ export default function App() {
         <nav className="hidden md:flex items-center gap-4 pr-6">
           <NavLink to="/" label="Home" />
           <NavLink to="/service" label="Services" />
-          <NavLink to="/register" label="Registration" />
+          {/* <NavLink to="/register" label="Registration" /> */}
           <NavLink to="/aboutus" label="About Us" />
         </nav>
 
@@ -73,6 +74,7 @@ export default function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/register" element={<Registration />} />
           <Route path="/payment" element={<Payment />} />
+          <Route path="/newpayment" element={<Newpay />} />
           <Route path="/upload-kundli" element={<UploadKundli />} />
           <Route path="/terms" element={<TermsAndConditions />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />

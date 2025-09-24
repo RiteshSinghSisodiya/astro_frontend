@@ -44,11 +44,11 @@ export default function Landing() {
               <li>• {t("kundli_count")}</li>
             </ul>
 
-            <Link to="/register">
+            {/* <Link to="/register">
               <button className="bg-yellow-300 text-black font-semibold px-6 py-3 rounded-xl shadow-md hover:scale-[1.02] transition">
                 {t("register")}
               </button>
-            </Link>
+            </Link> */}
           </div>
 
           <div className="rounded-2xl bg-white/10 backdrop-blur-md p-6 shadow-lg">

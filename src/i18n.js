@@ -36,7 +36,7 @@ const resources = {
       services_title: "Our Services",
       services: {
         kundli_reading: {
-          name: "Kundli Reading(Parasar siddhant) & Carrier guidance",
+          name: "Kundli Reading(Prasar siddhant) & Carrier guidance",
           description:
             "Detailed analysis of your birth chart to understand personality, career, relationships, health, and future possibilities, with guidance and remedies for balance.",
         },
