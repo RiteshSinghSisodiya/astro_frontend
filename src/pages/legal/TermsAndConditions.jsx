@@ -83,7 +83,8 @@ export default function TermsAndConditions() {
       <p>
         These Terms & Conditions are governed by the laws of India. Any disputes
         shall be subject to the jurisdiction of the courts located in{" "}
-        <strong>[Your City, State]</strong>.
+        <strong>Greater Noida, Uttar Pradesh
+          </strong>.
       </p>
 
       <h2 className="font-semibold mt-4">10. Changes to Terms</h2>

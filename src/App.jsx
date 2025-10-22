@@ -8,6 +8,7 @@ import TermsAndConditions from "./pages/legal/TermsAndConditions";
 import PrivacyPolicy from "./pages/legal/PrivacyPolicy";
 import RefundPolicy from "./pages/legal/RefundPolicy";
 import ContactUs from "./pages/legal/ContactUs";
+import ShippingPolicy from "./pages/legal/ShippingPolicy";
 import logo from "./assets/logo.webp";
 import Services from "./pages/Service";
 import AboutUs from "./pages/AboutUs";
@@ -80,6 +81,7 @@ export default function App() {
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/refund" element={<RefundPolicy />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/shipping" element={<ShippingPolicy />} />
           <Route path="/service" element={<Services />} />
           <Route path="/aboutus" element={<AboutUs />} />
         </Routes>
@@ -92,6 +94,7 @@ export default function App() {
           <Link to="/privacy" className="hover:underline">Privacy Policy</Link>
           <Link to="/refund" className="hover:underline">Refund & Cancellation</Link>
           <Link to="/contact" className="hover:underline">Contact Us</Link>
+          <Link to="/shipping" className="hover:underline">Shipping Policy</Link>
         </div>
         <p>© {new Date().getFullYear()} Aura Jyotish Kendra. All rights reserved.</p>
       </footer>

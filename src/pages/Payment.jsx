@@ -18,7 +18,7 @@ export default function Payment() {
   }, [state, navigate])
 
   const createOrder = async (amount) => {
-    const res = await fetch('https://astro-backend-txdw.onrender.com/api/create-order', {
+    const res = await fetch('http://localhost:4000/api/create-order', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ amount })
@@ -53,7 +53,7 @@ export default function Payment() {
           contact: state.formData.phone
         },
         handler: async function (response) {
-          const verifyRes = await fetch('https://astro-backend-txdw.onrender.com/api/verify', {
+          const verifyRes = await fetch('http://localhost:4000/api/verify', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
