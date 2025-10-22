@@ -34,24 +34,7 @@ export default function ShippingPolicy() {
         timely delivery.
       </p>
 
-      <h2 className="font-semibold mt-4">3. Shipping Rates &amp; Delivery Time</h2>
-      <p>
-        Standard shipping inside India is charged at a flat rate of ₹[X] (or
-        free above a certain order value—modify as applicable).
-      </p>
-
-      <p>Estimated delivery time:</p>
-      <ul className="list-disc pl-6">
-        <li>Metro cities: 2–4 business days after dispatch</li>
-        <li>Non‑metro / rural areas: 4–7 business days after dispatch</li>
-      </ul>
-
-      <p>
-        Note: Delivery time is an estimate and can be extended due to courier
-        logistics, natural conditions or remote locations.
-      </p>
-
-      <h2 className="font-semibold mt-4">4. Order Tracking</h2>
+      <h2 className="font-semibold mt-4">3. Order Tracking</h2>
       <p>
         Once your order is dispatched, we will send you a confirmation email
         (or SMS) with a tracking number and courier details.
@@ -62,7 +45,7 @@ export default function ShippingPolicy() {
         courier’s website.
       </p>
 
-      <h2 className="font-semibold mt-4">5. Address &amp; Delivery Instructions</h2>
+  <h2 className="font-semibold mt-4">4. Address &amp; Delivery Instructions</h2>
       <p>
         Please ensure that the shipping address you provide is accurate and
         complete (street, landmark, PIN code, state).
@@ -78,7 +61,7 @@ export default function ShippingPolicy() {
         responsibility.
       </p>
 
-      <h2 className="font-semibold mt-4">6. Failed Deliveries &amp; Returns to Sender</h2>
+  <h2 className="font-semibold mt-4">5. Failed Deliveries &amp; Returns to Sender</h2>
       <p>
         If the shipment is returned to us due to non‑delivery, refusal, or
         incorrect address, you will be notified.
@@ -94,7 +77,7 @@ export default function ShippingPolicy() {
         non‑refundable.
       </p>
 
-      <h2 className="font-semibold mt-4">7. International Orders (If applicable)</h2>
+  <h2 className="font-semibold mt-4">6. International Orders (If applicable)</h2>
       <p>
         Duties, customs, taxes or fees incurred for international shipments are
         the buyer’s responsibility.
@@ -105,7 +88,7 @@ export default function ShippingPolicy() {
         clearance.
       </p>
 
-      <h2 className="font-semibold mt-4">8. Damaged or Missing Items</h2>
+  <h2 className="font-semibold mt-4">7. Damaged or Missing Items</h2>
       <p>Please inspect your package immediately upon arrival.</p>
 
       <p>
