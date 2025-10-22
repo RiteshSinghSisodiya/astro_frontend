@@ -110,7 +110,11 @@ export default function ShippingPolicy() {
 
       <p>
         If you find any damage, missing items or incorrect products, contact us
-        within 48 hours of delivery at [insert your support email] with:
+        within 48 hours of delivery at{' '}
+        <a href="mailto:support@aurajyotishkendra.com" className="text-blue-600 underline">
+          support@aurajyotishkendra.com
+        </a>{' '}
+        with:
       </p>
 
       <ul className="list-disc pl-6">
