@@ -21,34 +21,36 @@ export default function AboutUs() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-zinc-50 via-white to-zinc-100">
       {/* Who we are */}
-      <section className="container mx-auto px-4 py-20">
-        <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
+      <section className="container mx-auto px-6 md:px-10 py-24 md:py-32">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent mb-8">
             {t('about.who_we_are.title')}
           </h1>
-          <p className="mt-6 text-lg text-zinc-600 leading-relaxed">
+          <p className="text-lg md:text-xl text-zinc-600 leading-relaxed max-w-3xl mx-auto">
             {t('about.who_we_are.description')}
           </p>
         </div>
       </section>
 
       {/* Stats */}
-      <section className="container mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 px-4 pb-16">
-        {STATS.map((s) => (
-          <div
-            key={s.id}
-            className="rounded-2xl border bg-white shadow-lg p-8 text-center hover:shadow-xl transition duration-300"
-          >
-            <div className="text-3xl md:text-4xl font-extrabold text-purple-600">{s.value}</div>
-            <p className="mt-2 text-base text-zinc-600">{t(s.label)}</p>
-          </div>
-        ))}
+      <section className="container mx-auto px-6 md:px-10 pb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          {STATS.map((s) => (
+            <div
+              key={s.id}
+              className="rounded-2xl border bg-white shadow-lg p-8 md:p-10 text-center hover:shadow-xl transition duration-300"
+            >
+              <div className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-purple-600 mb-4">{s.value}</div>
+              <p className="text-base md:text-lg text-zinc-600 font-medium">{t(s.label)}</p>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* Mission & Approach */}
-      <section className="container mx-auto px-4 py-16">
-        <div className="grid gap-8 md:grid-cols-2">
-          <div className="rounded-2xl border bg-white shadow-lg p-8 hover:shadow-2xl transition duration-300">
+      <section className="container mx-auto px-6 md:px-10 py-20">
+        <div className="grid gap-10 md:grid-cols-2">
+          <div className="rounded-2xl border bg-white shadow-lg p-8 md:p-10 hover:shadow-2xl transition duration-300">
             <h2 className="text-2xl font-bold mb-3 text-purple-700">
               {t('about.mission.title')}
             </h2>
@@ -89,12 +91,12 @@ export default function AboutUs() {
       </section>
 
       {/* Final Who We Are */}
-      <section className="container mx-auto px-4 py-20">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-pink-600">
+      <section className="container mx-auto px-6 md:px-10 py-24 md:py-32">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-pink-600">
             {t('about.final_who_we_are.title')}
           </h2>
-          <p className="text-lg text-zinc-600 leading-relaxed">
+          <p className="text-lg md:text-xl text-zinc-600 leading-relaxed max-w-3xl mx-auto">
             {t('about.final_who_we_are.description')}
           </p>
         </div>

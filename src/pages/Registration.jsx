@@ -5,9 +5,18 @@ import { useNavigate, useLocation } from "react-router-dom";
 
 export default function Registration() {
   const { state } = useLocation();
-  console.log(state);
   const { t } = useTranslation();
   const navigate = useNavigate();
+
+  // Calculate GST-inclusive price
+  const calculateGSTPrice = (basePrice) => {
+    const gst = Math.round(basePrice * 0.18);
+    const totalPrice = basePrice + gst;
+    return { basePrice, gst, totalPrice };
+  };
+
+  const servicePrice = state?.price || 1;
+  const { basePrice, gst, totalPrice } = calculateGSTPrice(servicePrice);
 
   const [formData, setFormData] = useState({
     fullName: "",
@@ -18,7 +27,7 @@ export default function Registration() {
     country: "",
     state: "",
     city: "",
-    amount: 1,
+    amount: totalPrice, // Use GST-inclusive price
   });
 
   const countries = useMemo(() => Country.getAllCountries(), []);
@@ -168,6 +177,33 @@ export default function Registration() {
                 ))}
               </select>
             </div>
+
+            {/* Service Summary */}
+            {state?.selectedService && (
+              <div className="bg-white/20 backdrop-blur-md rounded-xl p-6 border border-white/30">
+                <h3 className="text-lg font-semibold text-white mb-4">Service Summary</h3>
+                <div className="space-y-2">
+                  <div className="flex justify-between text-white/90">
+                    <span>Service:</span>
+                    <span className="font-medium">{state.selectedService}</span>
+                  </div>
+                  <div className="flex justify-between text-white/90">
+                    <span>Base Price:</span>
+                    <span>₹{basePrice}</span>
+                  </div>
+                  <div className="flex justify-between text-white/90">
+                    <span>GST (18%):</span>
+                    <span>₹{gst}</span>
+                  </div>
+                  <div className="border-t border-white/30 pt-2">
+                    <div className="flex justify-between text-white font-bold text-lg">
+                      <span>Total Amount:</span>
+                      <span className="text-yellow-300">₹{totalPrice}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
 
             <button
               type="submit"

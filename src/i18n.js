@@ -32,6 +32,10 @@ const resources = {
       aura_intro:
         "Experts of AURA JYOTISH KENDRA provide personalized astrological guidance to help individuals understand their life path and regain their sense of joy.",
 
+      // Cosmic Journey Section
+      cosmic_journey_title: "Discover Your Cosmic Journey",
+      cosmic_journey_description: "Explore our comprehensive astrological services designed to illuminate your path and bring clarity to your life's journey.",
+
       // New: Services
       services_title: "Our Services",
       services: {
@@ -124,6 +128,33 @@ const resources = {
       },
 
       opening_form: "Opening form…",
+
+      // Navigation
+      nav: {
+        home: "Home",
+        about_us: "About Us",
+      },
+
+      // Footer
+      footer: {
+        quick_links: "Quick Links",
+        legal: "Legal",
+        follow_us: "Follow Us",
+        social_media: "Social Media",
+        copyright: "All rights reserved",
+        scroll_to_top: "Scroll to top",
+      },
+
+      // Legal Pages
+      legal: {
+        terms_title: "Terms and Conditions",
+        privacy_title: "Privacy Policy",
+        refund_title: "Cancellation & Refund Policy",
+        contact_title: "Contact Us",
+        contact_us: "Contact us",
+        changes_to_terms: "Changes to Terms",
+        changes_to_policy: "Changes to Privacy Policy",
+      },
     },
   },
 
@@ -156,6 +187,10 @@ const resources = {
       tagline: "आपकी मुस्कान वापस लाने में मदद।",
       aura_intro:
         "आभा ज्योतिष केंद्र के विशेषज्ञ व्यक्तिगत ज्योतिषीय मार्गदर्शन प्रदान करते हैं ताकि लोग अपने जीवन पथ को समझ सकें और अपनी खुशी को फिर से पा सकें।",
+
+      // Cosmic Journey Section
+      cosmic_journey_title: "अपनी ब्रह्मांडीय यात्रा की खोज करें",
+      cosmic_journey_description: "हमारी व्यापक ज्योतिषीय सेवाओं का अन्वेषण करें जो आपके पथ को प्रकाशित करने और आपकी जीवन यात्रा में स्पष्टता लाने के लिए डिज़ाइन की गई हैं।",
 
       // New: Services
       services_title: "हमारी सेवाएँ",
@@ -249,6 +284,33 @@ const resources = {
       },
 
       opening_form: "फ़ॉर्म खोल रहा है…",
+
+      // Navigation
+      nav: {
+        home: "मुख्य पृष्ठ",
+        about_us: "हमारे बारे में",
+      },
+
+      // Footer
+      footer: {
+        quick_links: "त्वरित लिंक",
+        legal: "कानूनी",
+        follow_us: "हमें फॉलो करें",
+        social_media: "सोशल मीडिया",
+        copyright: "सर्वाधिकार सुरक्षित",
+        scroll_to_top: "शीर्ष पर स्क्रॉल करें",
+      },
+
+      // Legal Pages
+      legal: {
+        terms_title: "नियम और शर्तें",
+        privacy_title: "गोपनीयता नीति",
+        refund_title: "रद्दीकरण और रिफंड नीति",
+        contact_title: "संपर्क करें",
+        contact_us: "हमसे संपर्क करें",
+        changes_to_terms: "नियमों में परिवर्तन",
+        changes_to_policy: "गोपनीयता नीति में परिवर्तन",
+      },
     },
   },
 };

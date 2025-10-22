@@ -5,3 +5,165 @@
 html, body, #root {
   height: 100%;
 }
+
+/* Custom Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateX(30px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(30px) rotate(-360deg);
+  }
+}
+
+@keyframes cosmicGlow {
+  0%, 100% {
+    box-shadow: 0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor;
+  }
+  50% {
+    box-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 1.2s ease-out;
+}
+
+.animate-slide-down {
+  animation: slideDown 0.3s ease-out;
+}
+
+.animate-twinkle {
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-orbit {
+  animation: orbit 20s linear infinite;
+}
+
+.animate-cosmic-glow {
+  animation: cosmicGlow 2s ease-in-out infinite;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Hindi/Devanagari text fixes */
+[lang="hi"], [data-lang="hi"], .hindi-text {
+  line-height: 1.8 !important;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+  font-feature-settings: "kern" 1, "liga" 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Specific fixes for Hindi headings */
+[lang="hi"] h1, [lang="hi"] h2, [lang="hi"] h3, [lang="hi"] h4, [lang="hi"] h5, [lang="hi"] h6,
+[data-lang="hi"] h1, [data-lang="hi"] h2, [data-lang="hi"] h3, [data-lang="hi"] h4, [data-lang="hi"] h5, [data-lang="hi"] h6,
+.hindi-text h1, .hindi-text h2, .hindi-text h3, .hindi-text h4, .hindi-text h5, .hindi-text h6 {
+  line-height: 1.6 !important;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.25rem;
+}
+
+/* Specific fixes for Hindi paragraphs */
+[lang="hi"] p, [data-lang="hi"] p, .hindi-text p {
+  line-height: 1.9 !important;
+  margin-bottom: 1rem;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+/* Fixes for Hindi text in cards and containers */
+[lang="hi"] .text-sm, [data-lang="hi"] .text-sm, .hindi-text .text-sm {
+  line-height: 1.7 !important;
+}
+
+[lang="hi"] .text-lg, [data-lang="hi"] .text-lg, .hindi-text .text-lg {
+  line-height: 1.8 !important;
+}
+
+[lang="hi"] .text-xl, [data-lang="hi"] .text-xl, .hindi-text .text-xl {
+  line-height: 1.7 !important;
+}
+
+[lang="hi"] .text-2xl, [data-lang="hi"] .text-2xl, .hindi-text .text-2xl {
+  line-height: 1.6 !important;
+}
+
+[lang="hi"] .text-3xl, [data-lang="hi"] .text-3xl, .hindi-text .text-3xl {
+  line-height: 1.5 !important;
+}

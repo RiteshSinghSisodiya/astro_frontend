@@ -22,7 +22,7 @@ export default function UploadKundli() {
     formData.append("email", email);
 
     try {
-      const res = await fetch("https://astro-backend-txdw.onrender.com/api/upload-kundli", {
+      const res = await fetch("http://localhost:4000/api/upload-kundli", {
         method: "POST",
         body: formData
       });

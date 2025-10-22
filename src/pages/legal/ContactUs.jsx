@@ -1,8 +1,11 @@
 import PageShell from "../PageShell";
+import { useTranslation } from "react-i18next";
 
 export default function ContactUs() {
+  const { t } = useTranslation();
+  
   return (
-    <PageShell title="Contact Us">
+    <PageShell title={t("legal.contact_title")}>
       <p>
         Have questions, concerns, or need assistance? The{" "}
         <strong>Aura Jyotish Kendra</strong> team is here to help. You can reach
@@ -60,7 +63,7 @@ export default function ContactUs() {
         directly during business hours.
       </p>
 
-      <h2 className="font-semibold mt-4">📌 Social Media</h2>
+      <h2 className="font-semibold mt-4">📌 {t("footer.social_media")}</h2>
       <p>
         Follow us for updates, articles, and offers: <br />
         <a

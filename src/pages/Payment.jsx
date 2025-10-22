@@ -4,7 +4,6 @@ import astroBg from '../assets/astro.jpg'
 
 export default function Payment() {
   const { state } = useLocation()
-  console.log(state)
   const navigate = useNavigate()
   const amount = state?.price || 1
   const [formData, setFormData] = useState(() => ({
