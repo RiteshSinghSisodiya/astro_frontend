@@ -132,11 +132,10 @@ export default function Landing() {
               return (
                 <div
                   key={svc.id}
-                  className={`bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-lg rounded-xl md:rounded-2xl p-3 md:p-6 border border-white/30 transition-all duration-500 cursor-pointer hover:scale-105 hover:shadow-2xl hover:border-yellow-300/50 group ${
+                  className={`bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-lg rounded-xl md:rounded-2xl p-3 md:p-6 border border-white/30 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:border-yellow-300/50 group ${
                     active?.id === svc.id ? "scale-105 bg-gradient-to-br from-white/25 to-white/10 border-yellow-300/70 shadow-2xl" : ""
                   }`}
                   style={{ animationDelay: `${index * 0.1}s` }}
-                  onClick={() => startBooking(svc)}
                 >
                   <h3 className="text-sm md:text-xl font-semibold text-white mb-2 md:mb-3 group-hover:text-yellow-300 transition-colors duration-300 leading-tight">
                     {t(`services.${svc.id}.name`)}
@@ -160,9 +159,11 @@ export default function Landing() {
                       </div>
                     </div>
                   </div>
+                  {/* Register button temporarily hidden. Uncomment to enable registration.
                   <button className="w-full mt-2 md:mt-4 bg-gradient-to-r from-yellow-300 to-orange-400 text-black py-2 md:py-3 rounded-lg md:rounded-xl font-semibold text-xs md:text-sm hover:from-yellow-400 hover:to-orange-500 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
                     {t("register")}
                   </button>
+                  */}
                 </div>
               );
             })}
