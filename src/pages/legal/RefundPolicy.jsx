@@ -1,149 +1,136 @@
 import PageShell from "../PageShell";
-import { useTranslation } from "react-i18next";
 
 export default function RefundPolicy() {
-  const { t } = useTranslation();
-  
   return (
-    <PageShell title={t("legal.refund_title")}>
-      <div className="bg-gradient-to-r from-purple-600/20 to-blue-600/20 p-6 rounded-xl border border-purple-400/30 mb-8">
-        <p className="text-white/90 text-lg leading-relaxed text-center">
-          At <span className="text-purple-300 font-semibold">Aura Jyotish Kendra</span>, we strive to deliver quality
-          astrology services tailored to each individual. Since our reports and
-          consultations are personalized, cancellations and refunds are subject to
-          specific conditions outlined below.
-        </p>
-      </div>
+    <PageShell title="Refund Policy">
+      <p className="italic mb-4">Last updated: 23/10/2025</p>
 
-      <div className="space-y-6">
-        <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 p-6 rounded-xl border-l-4 border-red-400">
-          <h2 className="text-2xl font-bold text-red-300 mb-4 flex items-center">
-            <span className="w-8 h-8 bg-gradient-to-r from-red-400 to-orange-400 rounded-full flex items-center justify-center text-white font-bold mr-3">1</span>
-            Non-Refundable Services
-          </h2>
-          <p className="text-white/80 leading-relaxed">
-            All astrology reports, horoscopes, consultations, and remedies are{" "}
-            <span className="text-orange-300 font-semibold">personalized and custom-prepared</span> for each client.
-            Therefore, once delivered, these services{" "}
-            <span className="text-red-300 font-semibold">cannot be returned, canceled, or refunded</span>.
-          </p>
-        </div>
+      <p>
+        Thank you for purchasing astrology consultation services from{" "}
+        <strong>Aura Jyotish Kendra</strong>. Please read our Refund Policy
+        carefully to understand the conditions under which refunds may or may
+        not be provided.
+      </p>
 
-        <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 p-6 rounded-xl border-l-4 border-blue-400">
-          <h2 className="text-2xl font-bold text-blue-300 mb-4 flex items-center">
-            <span className="w-8 h-8 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full flex items-center justify-center text-white font-bold mr-3">2</span>
-            Cancellation Policy
-          </h2>
-          <ul className="space-y-3 text-white/80">
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-              Orders for astrology reports may be canceled within{" "}
-              <span className="text-blue-300 font-semibold">2 hours of payment</span> if processing has not started.
-            </li>
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-              Consultations may be canceled or rescheduled at least{" "}
-              <span className="text-purple-300 font-semibold">24 hours before</span> the scheduled appointment.
-            </li>
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-red-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-              Last-minute cancellations or "no-shows" will not be eligible for a
-              refund or rescheduling.
-            </li>
-          </ul>
-        </div>
+      <h2 className="font-semibold mt-4">1. Nature of Services</h2>
+      <p>
+        All astrology consultations, reports, and analyses provided by{" "}
+        <strong>Aura Jyotish Kendra</strong> are personalized digital services.
+        Once the service is delivered via email or WhatsApp, it is considered
+        successfully completed. As such, refunds are not automatically
+        applicable after delivery.
+      </p>
 
-        <div className="bg-gradient-to-r from-green-500/10 to-blue-500/10 p-6 rounded-xl border-l-4 border-green-400">
-          <h2 className="text-2xl font-bold text-green-300 mb-4 flex items-center">
-            <span className="w-8 h-8 bg-gradient-to-r from-green-400 to-blue-400 rounded-full flex items-center justify-center text-white font-bold mr-3">3</span>
-            Refund Eligibility
-          </h2>
-          <p className="text-white/80 leading-relaxed mb-4">Refunds will only be considered under the following circumstances:</p>
-          <ul className="space-y-3 text-white/80">
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-green-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-              A service was paid for but <span className="text-green-300 font-semibold">not delivered</span> due to a
-              technical or scheduling error on our side.
-            </li>
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-              You were <span className="text-blue-300 font-semibold">charged twice</span> for the same order.
-            </li>
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-              A payment was deducted incorrectly due to a{" "}
-              <span className="text-orange-300 font-semibold">payment gateway error</span>.
-            </li>
-          </ul>
-        </div>
+      <h2 className="font-semibold mt-4">2. Eligibility for Refunds</h2>
+      <p>Refunds may only be issued under the following exceptional circumstances:</p>
+      <ul className="list-disc pl-6">
+        <li>You have made a duplicate payment for the same service.</li>
+        <li>
+          You have not received your consultation or report within the promised
+          delivery time (i.e., within 2 business days from payment confirmation),
+          and you have contacted us but not received a resolution.
+        </li>
+        <li>
+          We are unable to deliver the service due to unforeseen technical or
+          operational reasons.
+        </li>
+      </ul>
+      <p>Refunds will not be provided for:</p>
+      <ul className="list-disc pl-6">
+        <li>Change of mind after the service has been delivered.</li>
+        <li>Dissatisfaction based on interpretation or outcome of the consultation.</li>
+        <li>Incorrect or incomplete information provided by the customer.</li>
+      </ul>
 
-        <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 p-6 rounded-xl border-l-4 border-purple-400">
-          <h2 className="text-2xl font-bold text-purple-300 mb-4 flex items-center">
-            <span className="w-8 h-8 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full flex items-center justify-center text-white font-bold mr-3">4</span>
-            Refund Process
-          </h2>
-          <p className="text-white/80 leading-relaxed mb-4">
-            Eligible refunds will be processed to your original payment method
-            within <span className="text-purple-300 font-semibold">7–10 business days</span>. To request a refund, please
-            email us at{" "}
-            <a href="/contact" className="text-blue-300 hover:text-blue-200 underline transition-colors">
-              Contact Us
-            </a>{" "}
-            with the following details:
-          </p>
-          <ul className="space-y-3 text-white/80">
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-              Full name
-            </li>
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-pink-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-              Order ID or Transaction reference number
-            </li>
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-              Payment receipt/screenshot
-            </li>
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-green-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-              Reason for refund request
-            </li>
-          </ul>
-        </div>
-
-        <div className="bg-gradient-to-r from-orange-500/10 to-red-500/10 p-6 rounded-xl border-l-4 border-orange-400">
-          <h2 className="text-2xl font-bold text-orange-300 mb-4 flex items-center">
-            <span className="w-8 h-8 bg-gradient-to-r from-orange-400 to-red-400 rounded-full flex items-center justify-center text-white font-bold mr-3">5</span>
-            No Guarantee Clause
-          </h2>
-          <p className="text-white/80 leading-relaxed">
-            Dissatisfaction with astrological predictions, remedies, or guidance is
-            not a valid reason for a refund. Astrology is interpretative, and
-            results may vary from person to person.
-          </p>
-        </div>
-
-        <div className="bg-gradient-to-r from-teal-500/10 to-blue-500/10 p-6 rounded-xl border-l-4 border-teal-400">
-          <h2 className="text-2xl font-bold text-teal-300 mb-4 flex items-center">
-            <span className="w-8 h-8 bg-gradient-to-r from-teal-400 to-blue-400 rounded-full flex items-center justify-center text-white font-bold mr-3">6</span>
-            Changes to Policy
-          </h2>
-          <p className="text-white/80 leading-relaxed">
-            Aura Jyotish Kendra reserves the right to modify or update this policy
-            at any time. Any changes will be posted on this page.
-          </p>
-        </div>
-      </div>
-
-      <div className="mt-8 p-6 bg-gradient-to-r from-purple-600/20 to-blue-600/20 rounded-xl border border-purple-400/30 text-center">
-        <p className="text-white/90 text-lg">
-          Questions?{" "}
-          <a href="/contact" className="text-blue-300 hover:text-blue-200 underline transition-colors font-semibold">
-            Contact us
+      <h2 className="font-semibold mt-4">3. Refund Request Procedure</h2>
+      <p>If you believe you are eligible for a refund, please follow these steps:</p>
+      <ol className="list-decimal pl-6">
+        <li>
+          Contact us via email or WhatsApp at{" "}
+          <a
+            href="mailto:support@aurajyotishkendra.com"
+            className="text-blue-600 underline"
+          >
+            support@aurajyotishkendra.com
+          </a>{" "}
+          or{" "}
+          <a href="tel:+919829495886" className="text-blue-600 underline">
+            +91 9829495886
           </a>
           .
-        </p>
-      </div>
+        </li>
+        <li>
+          Provide your order ID, payment details, and reason for requesting a
+          refund.
+        </li>
+        <li>
+          Our team will review your request within 2 business days and respond
+          with the outcome.
+        </li>
+      </ol>
+      <p>
+        If your request is approved, your refund will be processed through
+        Razorpay (or the original payment method) within 5–7 business days.
+      </p>
+
+      <h2 className="font-semibold mt-4">4. Partial Refunds (if applicable)</h2>
+      <p>
+        In certain cases, a partial refund may be issued — for example, if a
+        portion of the service has been completed but not delivered due to
+        unforeseen issues. Such refunds are determined at the discretion of{" "}
+        <strong>Aura Jyotish Kendra</strong> management.
+      </p>
+
+      <h2 className="font-semibold mt-4">5. No Refunds After Delivery</h2>
+      <p>
+        Once your astrology consultation or report has been delivered to your
+        email or WhatsApp, it is deemed as service completed and no refunds will
+        be processed thereafter.
+      </p>
+
+      <h2 className="font-semibold mt-4">6. Cancellation Policy</h2>
+      <p>
+        You may request to cancel your order within 6 hours of payment, provided
+        work on your consultation has not yet begun. If preparation or analysis
+        has already started, the order cannot be cancelled, and the payment will
+        be considered final.
+      </p>
+
+      <h2 className="font-semibold mt-4">7. Contact Us</h2>
+      <p>
+        For any queries or refund-related concerns, please contact us:
+      </p>
+      <ul className="list-none pl-0">
+        <li>
+          📧 Email:{" "}
+          <a
+            href="mailto:support@aurajyotishkendra.com"
+            className="text-blue-600 underline"
+          >
+            support@aurajyotishkendra.com
+          </a>
+        </li>
+        <li>
+          📱 WhatsApp:{" "}
+          <a
+            href="tel:+919829495886"
+            className="text-blue-600 underline"
+          >
+            +91 9829495886
+          </a>
+        </li>
+        <li>
+          🌐 Website:{" "}
+          <a
+            href="https://www.aurajyotishkendra.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            https://www.aurajyotishkendra.com
+          </a>
+        </li>
+      </ul>
     </PageShell>
   );
 }

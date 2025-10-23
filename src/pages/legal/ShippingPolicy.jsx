@@ -3,112 +3,154 @@ import PageShell from "../PageShell";
 export default function ShippingPolicy() {
   return (
     <PageShell title="Shipping Policy">
-      <h2 className="font-semibold mt-2">1. Order Processing</h2>
-      <p>
-        All orders placed on <strong>Aura&nbsp;Jyotish&nbsp;Kendra</strong> are
-        processed within 1–2 business days after payment is received and
-        verified.
-      </p>
+      <p className="italic mb-4">Last updated: 23/10/2025</p>
 
       <p>
-        Orders placed on weekends or public holidays will begin processing on
-        the next business day.
+        Thank you for choosing <strong>Aura Jyotish Kendra</strong> for your
+        astrology consultation needs. Please read our Shipping Policy carefully
+        to understand how we process and deliver our services.
       </p>
 
+      <h2 className="font-semibold mt-4">1. Order Processing</h2>
       <p>
-        If there is any delay (e.g., due to stock availability, special
-        packaging or festive demand), we will notify you by email or phone as
-        soon as possible.
+        All our astrology consultations and reports are delivered digitally — we
+        do not provide any physical shipment or printed copies.
       </p>
-
-      <h2 className="font-semibold mt-4">2. Shipping Destinations &amp; Carriers</h2>
-      <p>We currently ship to addresses within India (domestic shipping).</p>
-
-      <p>
-        We may offer international shipping in future—please contact us for
-        inquiries.
-      </p>
-
-      <p>
-        Shipments are dispatched via trusted courier partners for safe and
-        timely delivery.
-      </p>
-
-      <h2 className="font-semibold mt-4">3. Order Tracking</h2>
-      <p>
-        Once your order is dispatched, we will send you a confirmation email
-        (or SMS) with a tracking number and courier details.
-      </p>
-
-      <p>
-        You can use this tracking number to monitor the shipment status on the
-        courier’s website.
-      </p>
-
-  <h2 className="font-semibold mt-4">4. Address &amp; Delivery Instructions</h2>
-      <p>
-        Please ensure that the shipping address you provide is accurate and
-        complete (street, landmark, PIN code, state).
-      </p>
-
-      <p>
-        We strongly recommend a mobile number for smooth delivery coordination.
-      </p>
-
-      <p>
-        If the courier cannot deliver due to an incomplete address, the package
-        may be returned; any re‑shipping charge is the customer’s
-        responsibility.
-      </p>
-
-  <h2 className="font-semibold mt-4">5. Failed Deliveries &amp; Returns to Sender</h2>
-      <p>
-        If the shipment is returned to us due to non‑delivery, refusal, or
-        incorrect address, you will be notified.
-      </p>
-
-      <p>
-        A re‑shipment fee will apply (and shipping will be recalculated) if you
-        still want the order resent.
-      </p>
-
-      <p>
-        If the order is cancelled after dispatch, shipping charges are
-        non‑refundable.
-      </p>
-
-  <h2 className="font-semibold mt-4">6. International Orders (If applicable)</h2>
-      <p>
-        Duties, customs, taxes or fees incurred for international shipments are
-        the buyer’s responsibility.
-      </p>
-
-      <p>
-        Delivery times for international orders vary by country and customs
-        clearance.
-      </p>
-
-  <h2 className="font-semibold mt-4">7. Damaged or Missing Items</h2>
-      <p>Please inspect your package immediately upon arrival.</p>
-
-      <p>
-        If you find any damage, missing items or incorrect products, contact us
-        within 48 hours of delivery at{' '}
-        <a href="mailto:support@aurajyotishkendra.com" className="text-blue-600 underline">
-          support@aurajyotishkendra.com
-        </a>{' '}
-        with:
-      </p>
-
       <ul className="list-disc pl-6">
-        <li>Order number</li>
-        <li>Description and photo of the damage or issue</li>
+        <li>
+          <strong>Order Confirmation:</strong> Once your payment is successfully
+          completed through Razorpay, you will receive a confirmation message
+          via email or WhatsApp containing your order details.
+        </li>
+        <li>
+          <strong>Processing Time:</strong> We aim to deliver your astrology
+          consultation or report within 2 business days from the time of payment
+          confirmation.
+        </li>
+        <li>
+          <strong>Delivery Channels:</strong> All digital consultations and
+          reports are shared via the communication method selected by you at
+          checkout — email or WhatsApp.
+        </li>
       </ul>
 
+      <h2 className="font-semibold mt-4">2. Delivery Timeline</h2>
       <p>
-        We will assess the matter and either send a replacement or issue a
-        refund, as per our returns policy.
+        Our typical delivery timeline is within 48 hours (2 business days) after
+        confirmation of your payment. If your order requires additional details
+        (such as birth information or query clarification), delivery time will
+        begin after we receive the necessary information from you.
       </p>
+
+      <h2 className="font-semibold mt-4">3. Delivery Method</h2>
+      <p>Since our services are digital, delivery is made electronically.</p>
+      <ul className="list-disc pl-6">
+        <li>
+          A written astrology report or consultation summary via email or
+          WhatsApp, and/or
+        </li>
+        <li>
+          Direct consultation through WhatsApp chat, as per your service
+          selection.
+        </li>
+      </ul>
+      <p>No physical delivery or courier service is involved.</p>
+
+      <h2 className="font-semibold mt-4">4. Delays or Non-Delivery</h2>
+      <p>
+        While we make every effort to ensure timely delivery, delays may occur
+        in the following cases:
+      </p>
+      <ul className="list-disc pl-6">
+        <li>Incorrect or incomplete contact information provided by the customer.</li>
+        <li>Technical or internet connectivity issues.</li>
+        <li>High order volumes or unforeseen circumstances.</li>
+      </ul>
+      <p>
+        If you do not receive your consultation within the expected time, please
+        contact us at{" "}
+        <a
+          href="mailto:support@aurajyotishkendra.com"
+          className="text-blue-600 underline"
+        >
+          support@aurajyotishkendra.com
+        </a>
+        {" or "}
+        <a
+          href="tel:+919829495886"
+          className="text-blue-600 underline"
+        >
+          +91 9829495886
+        </a>{" "}
+        and we will promptly assist you.
+      </p>
+
+      <h2 className="font-semibold mt-4">5. No Shipping Charges</h2>
+      <p>
+        As all services are delivered digitally, no shipping fees or additional
+        delivery charges apply to any order.
+      </p>
+
+      <h2 className="font-semibold mt-4">6. Service Completion and Acknowledgment</h2>
+      <p>
+        Once your consultation or report has been delivered via email or
+        WhatsApp, the service is considered completed. You will also receive a
+        confirmation message to acknowledge successful delivery.
+      </p>
+
+      <h2 className="font-semibold mt-4">7. Changes to Order or Contact Details</h2>
+      <p>
+        If you need to update your contact information (email or WhatsApp
+        number) after placing an order, please inform us within 12 hours of your
+        order confirmation. Any delay in communication may affect timely
+        delivery.
+      </p>
+
+      <h2 className="font-semibold mt-4">8. Refunds and Revisions</h2>
+      <p>
+        Since astrology consultations are personalized digital services, they
+        are non-refundable once delivered. However, if you do not receive your
+        service within the promised timeframe due to an issue on our end, we may
+        offer a full refund or re-delivery, at our discretion. For more details,
+        please refer to our Refund Policy.
+      </p>
+
+      <h2 className="font-semibold mt-4">9. Contact Us</h2>
+      <p>
+        If you have any questions regarding your order delivery, please contact
+        us:
+      </p>
+      <ul className="list-none pl-0">
+        <li>
+          📧 Email:{" "}
+          <a
+            href="mailto:support@aurajyotishkendra.com"
+            className="text-blue-600 underline"
+          >
+            support@aurajyotishkendra.com
+          </a>
+        </li>
+        <li>
+          📱 WhatsApp:{" "}
+          <a
+            href="tel:+919829495886"
+            className="text-blue-600 underline"
+          >
+            +91 9829495886
+          </a>
+        </li>
+        <li>
+          🌐 Website:{" "}
+          <a
+            href="https://www.aurajyotishkendra.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            https://www.aurajyotishkendra.com
+          </a>
+        </li>
+      </ul>
     </PageShell>
   );
 }
