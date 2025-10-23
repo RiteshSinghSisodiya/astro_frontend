@@ -3,100 +3,69 @@ import { useTranslation } from "react-i18next";
 
 export default function ContactUs() {
   const { t } = useTranslation();
-  
   return (
-    <PageShell title={t("legal.contact_title")}>
+    <PageShell title={t("legal.contact_title")}> 
       <p>
-        Have questions, concerns, or need assistance? The{" "}
-        <strong>Aura Jyotish Kendra</strong> team is here to help. You can reach
-        us through the following channels:
+        {t("legal.contact_page.intro")} 
       </p>
 
-      <h2 className="font-semibold mt-4">📞 Phone / WhatsApp</h2>
+      <h2 className="font-semibold mt-4">{t("legal.contact_page.phone_heading")}</h2>
       <p>
-        For quick support, call or WhatsApp us at{" "}
-        <a
-          href="tel:+919829495886"
-          className="text-blue-600 underline"
-        >
-          +91 9829495886
+        {t("legal.contact_page.phone_text")} {" "}
+        <a href="tel:+919829495886" className="text-blue-600 underline">
+          {t("legal.contact_page.phone_number")}
         </a>
       </p>
 
-      <h2 className="font-semibold mt-4">📧 Email</h2>
+      <h2 className="font-semibold mt-4">{t("legal.contact_page.email_heading")}</h2>
       <p>
-        General inquiries:{" "}
-        <a
-          href="mailto:info@aurajyotishkendra.com"
-          className="text-blue-600 underline"
-        >
-          {/* info@aurajyotishkendra.com */}
+        {t("legal.contact_page.email_general_label")} {" "}
+        <a href="mailto:info@aurajyotishkendra.com" className="text-blue-600 underline">
+          {t("legal.contact_page.email_general")}
         </a>
       </p>
       <p>
-        Support & Refunds:{" "}
-        <a
-          href="mailto:support@aurajyotishkendra.com"
-          className="text-blue-600 underline"
-        >
-          support@aurajyotishkendra.com
+        {t("legal.contact_page.email_support_label")} {" "}
+        <a href="mailto:support@aurajyotishkendra.com" className="text-blue-600 underline">
+          {t("legal.contact_page.email_support")}
         </a>
       </p>
 
-      <h2 className="font-semibold mt-4">🏢 Office Address</h2>
+      <h2 className="font-semibold mt-4">{t("legal.contact_page.address_heading")}</h2>
       <p>
-        Aura Jyotish Kendra <br />
-        
-        India
+        {t("legal.contact_page.address_name")} <br />
+        {t("legal.contact_page.address_country")}
       </p>
 
-      <h2 className="font-semibold mt-4">⏰ Business Hours</h2>
+      <h2 className="font-semibold mt-4">{t("legal.contact_page.hours_heading")}</h2>
       <p>
-        Monday – Saturday: <strong>10:00 AM – 7:00 PM IST</strong> <br />
-        Sunday: Closed
+        {t("legal.contact_page.hours_weekdays")} <br />
+        {t("legal.contact_page.hours_sunday")}
       </p>
 
-      <h2 className="font-semibold mt-4">💬 Response Time</h2>
+      <h2 className="font-semibold mt-4">{t("legal.contact_page.response_heading")}</h2>
       <p>
-        We usually respond to emails and messages within{" "}
-        <strong>24–48 hours</strong>. For urgent matters, please call us
-        directly during business hours.
+        {t("legal.contact_page.response_text")}
       </p>
 
-      <h2 className="font-semibold mt-4">📌 {t("footer.social_media")}</h2>
+      <h2 className="font-semibold mt-4">{t("legal.contact_page.social_heading")}</h2>
       <p>
-        Follow us for updates, articles, and offers: <br />
-        <a
-          href="https://facebook.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-600 underline"
-        >
-          Facebook
+        {t("legal.contact_page.social_text")} <br />
+        <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
+          {t("legal.contact_page.social_facebook")}
         </a>{" "}
         |{" "}
-        <a
-          href="https://instagram.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-600 underline"
-        >
-          Instagram
+        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
+          {t("legal.contact_page.social_instagram")}
         </a>{" "}
         |{" "}
-        <a
-          href="https://twitter.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-600 underline"
-        >
-          Twitter (X)
+        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
+          {t("legal.contact_page.social_twitter")}
         </a>
       </p>
 
       <p className="mt-6">
-        We look forward to assisting you and ensuring your experience with{" "}
-        <strong>Aura Jyotish Kendra</strong> is positive and meaningful.
+        {t("legal.contact_page.closing_text")} 
       </p>
     </PageShell>
   );

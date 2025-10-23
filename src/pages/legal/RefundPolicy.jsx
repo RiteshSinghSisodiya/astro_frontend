@@ -1,136 +1,98 @@
 import PageShell from "../PageShell";
+import { useTranslation } from "react-i18next";
 
 export default function RefundPolicy() {
+  const { t } = useTranslation();
+
   return (
-    <PageShell title="Refund Policy">
-      <p className="italic mb-4">Last updated: 23/10/2025</p>
+    <PageShell title={t("refund.title")}
+    >
+      <div className="bg-gradient-to-r from-purple-600/20 to-blue-600/20 p-6 rounded-xl border border-purple-400/30 mb-8">
+        <p className="text-white/90 text-lg leading-relaxed text-center">{t("refund.intro")}</p>
+      </div>
 
-      <p>
-        Thank you for purchasing astrology consultation services from{" "}
-        <strong>Aura Jyotish Kendra</strong>. Please read our Refund Policy
-        carefully to understand the conditions under which refunds may or may
-        not be provided.
-      </p>
+      <div className="space-y-6">
+        <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 p-6 rounded-xl border-l-4 border-yellow-400">
+          <h2 className="text-2xl font-bold text-yellow-300 mb-4 flex items-center">
+            <span className="w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full flex items-center justify-center text-black font-bold mr-3">1</span>
+            {t("refund.s1_title")}
+          </h2>
+          <p className="text-white/80 leading-relaxed">{t("refund.s1_p1")}</p>
+        </div>
 
-      <h2 className="font-semibold mt-4">1. Nature of Services</h2>
-      <p>
-        All astrology consultations, reports, and analyses provided by{" "}
-        <strong>Aura Jyotish Kendra</strong> are personalized digital services.
-        Once the service is delivered via email or WhatsApp, it is considered
-        successfully completed. As such, refunds are not automatically
-        applicable after delivery.
-      </p>
+        <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 p-6 rounded-xl border-l-4 border-blue-400">
+          <h2 className="text-2xl font-bold text-blue-300 mb-4 flex items-center">
+            <span className="w-8 h-8 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full flex items-center justify-center text-white font-bold mr-3">2</span>
+            {t("refund.s2_title")}
+          </h2>
+          <p className="text-white/80 leading-relaxed">{t("refund.s2_intro")}</p>
+          <ul className="list-disc pl-6 text-white/80 mt-4">
+            <li>{t("refund.s2_li1")}</li>
+            <li>{t("refund.s2_li2")}</li>
+            <li>{t("refund.s2_li3")}</li>
+          </ul>
+          <p className="mt-4">{t("refund.s2_exclusions_intro")}</p>
+          <ul className="list-disc pl-6 text-white/80 mt-2">
+            <li>{t("refund.s2_ex1")}</li>
+            <li>{t("refund.s2_ex2")}</li>
+            <li>{t("refund.s2_ex3")}</li>
+          </ul>
+        </div>
 
-      <h2 className="font-semibold mt-4">2. Eligibility for Refunds</h2>
-      <p>Refunds may only be issued under the following exceptional circumstances:</p>
-      <ul className="list-disc pl-6">
-        <li>You have made a duplicate payment for the same service.</li>
-        <li>
-          You have not received your consultation or report within the promised
-          delivery time (i.e., within 2 business days from payment confirmation),
-          and you have contacted us but not received a resolution.
-        </li>
-        <li>
-          We are unable to deliver the service due to unforeseen technical or
-          operational reasons.
-        </li>
-      </ul>
-      <p>Refunds will not be provided for:</p>
-      <ul className="list-disc pl-6">
-        <li>Change of mind after the service has been delivered.</li>
-        <li>Dissatisfaction based on interpretation or outcome of the consultation.</li>
-        <li>Incorrect or incomplete information provided by the customer.</li>
-      </ul>
+        <div className="bg-gradient-to-r from-green-500/10 to-blue-500/10 p-6 rounded-xl border-l-4 border-green-400">
+          <h2 className="text-2xl font-bold text-green-300 mb-4 flex items-center">
+            <span className="w-8 h-8 bg-gradient-to-r from-green-400 to-blue-400 rounded-full flex items-center justify-center text-white font-bold mr-3">3</span>
+            {t("refund.s3_title")}
+          </h2>
+          <p className="text-white/80 leading-relaxed">{t("refund.s3_intro")}</p>
+          <ol className="list-decimal pl-6 text-white/80 mt-4">
+            <li>{t("refund.s3_step1")}</li>
+            <li>{t("refund.s3_step2")}</li>
+            <li>{t("refund.s3_step3")}</li>
+          </ol>
+        </div>
 
-      <h2 className="font-semibold mt-4">3. Refund Request Procedure</h2>
-      <p>If you believe you are eligible for a refund, please follow these steps:</p>
-      <ol className="list-decimal pl-6">
-        <li>
-          Contact us via email or WhatsApp at{" "}
-          <a
-            href="mailto:support@aurajyotishkendra.com"
-            className="text-blue-600 underline"
-          >
-            support@aurajyotishkendra.com
-          </a>{" "}
-          or{" "}
-          <a href="tel:+919829495886" className="text-blue-600 underline">
-            +91 9829495886
-          </a>
-          .
-        </li>
-        <li>
-          Provide your order ID, payment details, and reason for requesting a
-          refund.
-        </li>
-        <li>
-          Our team will review your request within 2 business days and respond
-          with the outcome.
-        </li>
-      </ol>
-      <p>
-        If your request is approved, your refund will be processed through
-        Razorpay (or the original payment method) within 5–7 business days.
-      </p>
+        <div className="bg-gradient-to-r from-orange-500/10 to-red-500/10 p-6 rounded-xl border-l-4 border-orange-400">
+          <h2 className="text-2xl font-bold text-orange-300 mb-4 flex items-center">
+            <span className="w-8 h-8 bg-gradient-to-r from-orange-400 to-red-400 rounded-full flex items-center justify-center text-white font-bold mr-3">4</span>
+            {t("refund.s4_title")}
+          </h2>
+          <p className="text-white/80 leading-relaxed">{t("refund.s4_p1")}</p>
+        </div>
 
-      <h2 className="font-semibold mt-4">4. Partial Refunds (if applicable)</h2>
-      <p>
-        In certain cases, a partial refund may be issued — for example, if a
-        portion of the service has been completed but not delivered due to
-        unforeseen issues. Such refunds are determined at the discretion of{" "}
-        <strong>Aura Jyotish Kendra</strong> management.
-      </p>
+        <div className="bg-gradient-to-r from-indigo-500/10 to-purple-500/10 p-6 rounded-xl border-l-4 border-indigo-400">
+          <h2 className="text-2xl font-bold text-indigo-300 mb-4 flex items-center">
+            <span className="w-8 h-8 bg-gradient-to-r from-indigo-400 to-purple-400 rounded-full flex items-center justify-center text-white font-bold mr-3">5</span>
+            {t("refund.s5_title")}
+          </h2>
+          <p className="text-white/80 leading-relaxed">{t("refund.s5_p1")}</p>
+        </div>
 
-      <h2 className="font-semibold mt-4">5. No Refunds After Delivery</h2>
-      <p>
-        Once your astrology consultation or report has been delivered to your
-        email or WhatsApp, it is deemed as service completed and no refunds will
-        be processed thereafter.
-      </p>
+        <div className="bg-gradient-to-r from-pink-500/10 to-red-500/10 p-6 rounded-xl border-l-4 border-pink-400">
+          <h2 className="text-2xl font-bold text-pink-300 mb-4 flex items-center">
+            <span className="w-8 h-8 bg-gradient-to-r from-pink-400 to-red-400 rounded-full flex items-center justify-center text-white font-bold mr-3">6</span>
+            {t("refund.s6_title")}
+          </h2>
+          <p className="text-white/80 leading-relaxed">{t("refund.s6_p1")}</p>
+        </div>
 
-      <h2 className="font-semibold mt-4">6. Cancellation Policy</h2>
-      <p>
-        You may request to cancel your order within 6 hours of payment, provided
-        work on your consultation has not yet begun. If preparation or analysis
-        has already started, the order cannot be cancelled, and the payment will
-        be considered final.
-      </p>
+        <div className="bg-gradient-to-r from-cyan-500/10 to-teal-500/10 p-6 rounded-xl border-l-4 border-cyan-400">
+          <h2 className="text-2xl font-bold text-cyan-300 mb-4 flex items-center">
+            <span className="w-8 h-8 bg-gradient-to-r from-cyan-400 to-teal-400 rounded-full flex items-center justify-center text-white font-bold mr-3">7</span>
+            {t("refund.contact_title")}
+          </h2>
+          <p className="text-white/80 leading-relaxed">{t("refund.contact_p1")}</p>
+          <ul className="space-y-3 text-white/80 mt-4">
+            <li>📧 <a href={`mailto:${t("refund.contact_email")}`} className="text-blue-300 underline">{t("refund.contact_email")}</a></li>
+            <li>📱 <a href={`tel:${t("refund.contact_phone")}`} className="text-blue-300 underline">{t("refund.contact_phone")}</a></li>
+            <li>🌐 <a href={t("refund.contact_website")} target="_blank" rel="noopener noreferrer" className="text-blue-300 underline">{t("refund.contact_website")}</a></li>
+          </ul>
+        </div>
+      </div>
 
-      <h2 className="font-semibold mt-4">7. Contact Us</h2>
-      <p>
-        For any queries or refund-related concerns, please contact us:
-      </p>
-      <ul className="list-none pl-0">
-        <li>
-          📧 Email:{" "}
-          <a
-            href="mailto:support@aurajyotishkendra.com"
-            className="text-blue-600 underline"
-          >
-            support@aurajyotishkendra.com
-          </a>
-        </li>
-        <li>
-          📱 WhatsApp:{" "}
-          <a
-            href="tel:+919829495886"
-            className="text-blue-600 underline"
-          >
-            +91 9829495886
-          </a>
-        </li>
-        <li>
-          🌐 Website:{" "}
-          <a
-            href="https://www.aurajyotishkendra.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 underline"
-          >
-            https://www.aurajyotishkendra.com
-          </a>
-        </li>
-      </ul>
+      <div className="mt-8 p-6 bg-gradient-to-r from-purple-600/20 to-blue-600/20 rounded-xl border border-purple-400/30 text-center">
+        <p className="text-white/90 text-lg">Questions? <a href="/contact" className="text-blue-300 hover:text-blue-200 underline transition-colors font-semibold">Contact us</a>.</p>
+      </div>
     </PageShell>
   );
 }

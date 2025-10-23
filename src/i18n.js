@@ -149,11 +149,141 @@ const resources = {
       legal: {
         terms_title: "Terms and Conditions",
         privacy_title: "Privacy Policy",
+        shipping_title: "Shipping Policy",
         refund_title: "Cancellation & Refund Policy",
         contact_title: "Contact Us",
         contact_us: "Contact us",
         changes_to_terms: "Changes to Terms",
         changes_to_policy: "Changes to Privacy Policy",
+        // Added: Contact Us page content
+        contact_page: {
+          title: "Contact Us",
+          intro: "Have questions, concerns, or need assistance? The Aura Jyotish Kendra team is here to help. You can reach us through the following channels:",
+          phone_heading: "📞 Phone / WhatsApp",
+          phone_text: "For quick support, call or WhatsApp us at",
+          phone_number: "+91 9829495886",
+          email_heading: "📧 Email",
+          email_general_label: "General inquiries:",
+          email_general: "info@aurajyotishkendra.com",
+          email_support_label: "Support & Refunds:",
+          email_support: "support@aurajyotishkendra.com",
+          address_heading: "🏢 Office Address",
+          address_name: "Aura Jyotish Kendra",
+          address_country: "India",
+          hours_heading: "⏰ Business Hours",
+          hours_weekdays: "Monday – Saturday: 10:00 AM – 7:00 PM IST",
+          hours_sunday: "Sunday: Closed",
+          response_heading: "💬 Response Time",
+          response_text: "We usually respond to emails and messages within 24–48 hours. For urgent matters, please call us directly during business hours.",
+          social_heading: "📌 Social Media",
+          social_text: "Follow us for updates, articles, and offers:",
+          social_facebook: "Facebook",
+          social_instagram: "Instagram",
+          social_twitter: "Twitter (X)",
+          closing_text: "We look forward to assisting you and ensuring your experience with Aura Jyotish Kendra is positive and meaningful."
+        },
+      },
+      
+      
+      
+      
+      privacy: {
+        intro: "At Aura Jyotish Kendra, we respect your privacy and are committed to protecting your personal information. This Privacy Policy explains what data we collect, how we use it, and the steps we take to keep it secure.",
+        sections: [
+          {
+            title: "1. Information We Collect",
+            bullets: [
+              "Personal Information: Name, email address, phone number, address, and birth details (date, time, and place of birth) provided while registering or requesting services.",
+              "Payment Information: Transaction details (processed through secure third-party gateways). We do not store sensitive card details.",
+              "Technical Information: IP address, browser type, device information, and usage data collected through cookies and analytics tools."
+            ]
+          },
+          {
+            title: "2. How We Use Your Information",
+            bullets: [
+              "To prepare personalized astrology reports and consultations.",
+              "To process payments securely and confirm transactions.",
+              "To communicate service-related updates, reminders, or customer support responses.",
+              "To improve our services, website performance, and user experience.",
+              "To send newsletters, promotions, or offers (only if you have opted-in)."
+            ]
+          },
+          {
+            title: "3. Data Sharing & Disclosure",
+            paragraphs: [
+              "We do not sell, rent, or trade your personal information.",
+              "However, we may share limited data with:"
+            ],
+            bullets: [
+              "Trusted third-party service providers such as payment processors, hosting providers, and communication platforms.",
+              "Legal authorities, if required by law, regulation, or court order."
+            ]
+          },
+          {
+            title: "4. Data Protection",
+            paragraphs: [
+              "We use industry-standard security measures such as SSL encryption, secure servers, and firewalls to safeguard your information.",
+              "However, no method of online transmission is 100% secure, and we cannot guarantee absolute protection."
+            ]
+          },
+          {
+            title: "5. Cookies & Tracking",
+            paragraphs: [
+              "Our website uses cookies to enhance user experience, remember preferences, and analyze traffic.",
+              "You may disable cookies in your browser settings, but some features of the site may not work properly."
+            ]
+          },
+          {
+            title: "6. Your Rights",
+            bullets: [
+              "You may request access to the personal data we hold about you.",
+              "You can ask for corrections if your data is inaccurate.",
+              "You may request deletion of your data, subject to legal or contractual obligations.",
+              "You may opt out of receiving promotional communications at any time."
+            ]
+          },
+          {
+            title: "7. Third-Party Links",
+            paragraphs: [
+              "Our website may include links to third-party websites.",
+              "We are not responsible for the content, security, or privacy practices of such external sites."
+            ]
+          },
+          {
+            title: "8. Changes to Privacy Policy",
+            paragraphs: [
+              "Aura Jyotish Kendra reserves the right to update or revise this Privacy Policy at any time.",
+              "Any changes will be effective immediately upon posting on this page."
+            ]
+          }
+        ]
+      },
+      // Terms & Conditions (English)
+      terms: {
+        intro_welcome: "Welcome to",
+        intro_after_name: "(\"we,\" \"our,\" \"us\"). By accessing or using our website, services, or content, you agree to these Terms & Conditions. Please read them carefully before using our services.",
+        s1_title: "Services Provided",
+        s1_p1: "We provide astrology-related services such as horoscope readings, personalized reports, consultations, remedies, and spiritual guidance. These services are intended for personal guidance and spiritual awareness. They are not a substitute for medical, financial, or legal advice.",
+        s2_title: "Eligibility",
+        s2_p1: "You must be 18 years or older to use our services. If you are under 18, you may only use our services under the supervision of a parent or guardian. You agree that all information you provide to us (such as birth details, contact information, and payment details) is accurate and complete.",
+        s3_title: "User Responsibilities",
+        s3_p1: "You agree not to misuse our services, upload harmful content, or engage in unlawful activities through our platform. You are responsible for maintaining the confidentiality of your account information (if applicable).",
+        s4_title: "No Guarantee of Outcomes",
+        s4_p1: "Astrology is interpretive in nature, and while we strive for accuracy, outcomes may vary. We do not guarantee the accuracy, effectiveness, or results of predictions, remedies, or consultations. Any decisions you make based on our services are solely your responsibility.",
+        s5_title: "Payments & Refunds",
+        s5_p1: "All services must be paid for in advance. Prices may change at our discretion. We do not store sensitive payment information. Refunds and cancellations are governed strictly by our",
+        s5_link_label: "Refund & Cancellation Policy",
+        s6_title: "Limitation of Liability",
+        s6_p1: "Aura Jyotish Kendra shall not be held liable for any direct, indirect, incidental, or consequential damages resulting from the use of our services. Our maximum liability shall not exceed the amount paid by you for the specific service.",
+        s7_title: "Intellectual Property",
+        s7_p1: "All content on our website, including reports, graphics, text, and designs, is the intellectual property of Aura Jyotish Kendra. You may not copy, distribute, or reproduce our content without prior written permission.",
+        s8_title: "Termination of Services",
+        s8_p1: "We reserve the right to suspend or terminate your access to our services if you violate these terms, misuse the platform, or engage in fraudulent activity.",
+        s9_title: "Governing Law",
+        s9_p1: "These Terms & Conditions are governed by the laws of India. Any disputes shall be subject to the jurisdiction of the courts located in [Your City, State].",
+        s10_title: "Changes to Terms",
+        s10_p1: "We reserve the right to update or modify these Terms at any time. Any changes will be posted on this page. Continued use of our services means that you accept the revised Terms.",
+        questions_prompt: "Questions?",
       },
       // Shipping Policy
       shipping: {
@@ -162,34 +292,74 @@ const resources = {
         intro: "Thank you for choosing Aura Jyotish Kendra for your astrology consultation needs. Please read our Shipping Policy carefully to understand how we process and deliver our services.",
         order_processing_title: "1. Order Processing",
         order_processing_p1: "All our astrology consultations and reports are delivered digitally — we do not provide any physical shipment or printed copies.",
-        op_li1: "Order Confirmation: Once your payment is successfully completed through Razorpay, you will receive a confirmation message via email or WhatsApp containing your order details.",
+        op_li1: "Order Confirmation: Once your payment is successfully completed through Razorpay, you will receive a confirmation message via email or वॉट्सऐप containing your order details.",
         op_li2: "Processing Time: We aim to deliver your astrology consultation or report within 2 business days from the time of payment confirmation.",
-        op_li3: "Delivery Channels: All digital consultations and reports are shared via the communication method selected by you at checkout — email or WhatsApp.",
+        op_li3: "Delivery Channels: All digital consultations and reports are shared via the communication method selected by you at checkout — email or वॉट्सऐप.",
         delivery_timeline_title: "2. Delivery Timeline",
         delivery_timeline_p1: "Our typical delivery timeline is within 48 hours (2 business days) after confirmation of your payment. If your order requires additional details (such as birth information or query clarification), delivery time will begin after we receive the necessary information from you.",
         delivery_method_title: "3. Delivery Method",
         dm_p1: "Since our services are digital, delivery is made electronically.",
-        dm_li1: "A written astrology report or consultation summary via email or WhatsApp, and/or",
-        dm_li2: "Direct consultation through WhatsApp chat, as per your service selection.",
+        dm_li1: "A written astrology report or consultation summary via email or वॉट्सऐप, and/or",
+        dm_li2: "Direct consultation through वॉट्सऐप chat, as per your service selection.",
+        no_physical: "We do not ship any physical items.",
         delays_title: "4. Delays or Non-Delivery",
         delays_p1: "While we make every effort to ensure timely delivery, delays may occur in the following cases:",
         delays_li1: "Incorrect or incomplete contact information provided by the customer.",
         delays_li2: "Technical or internet connectivity issues.",
         delays_li3: "High order volumes or unforeseen circumstances.",
+        delays_contact_prefix: "If you experience delays, contact us at",
+        delays_contact_or: "or",
+        delays_contact_suffix: "for assistance.",
         no_shipping_title: "5. No Shipping Charges",
         no_shipping_p1: "As all services are delivered digitally, no shipping fees or additional delivery charges apply to any order.",
         completion_title: "6. Service Completion and Acknowledgment",
-        completion_p1: "Once your consultation or report has been delivered via email or WhatsApp, the service is considered completed. You will also receive a confirmation message to acknowledge successful delivery.",
+        completion_p1: "Once your consultation or report has been delivered via email or वॉट्सऐप, the service is considered completed. You will also receive a confirmation message to acknowledge successful delivery.",
         changes_title: "7. Changes to Order or Contact Details",
-        changes_p1: "If you need to update your contact information (email or WhatsApp number) after placing an order, please inform us within 12 hours of your order confirmation. Any delay in communication may affect timely delivery.",
+        changes_p1: "If you need to update your contact information (email or वॉट्सऐप number) after placing an order, please inform us within 12 hours of your order confirmation. Any delay in communication may affect timely delivery.",
         refunds_title: "8. Refunds and Revisions",
         refunds_p1: "Since astrology consultations are personalized digital services, they are non-refundable once delivered. However, if you do not receive your service within the promised timeframe due to an issue on our end, we may offer a full refund or re-delivery, at our discretion. For more details, please refer to our Refund Policy.",
         contact_title: "9. Contact Us",
+        contact_intro: "For any delivery or shipping-related queries, reach us via:",
         contact_email_label: "Email:",
         contact_email: "support@aurajyotishkendra.com",
-        contact_phone_label: "WhatsApp:",
+        contact_phone_label: "वॉट्सऐप:",
         contact_phone: "+91 9829495886",
         contact_website_label: "Website:",
+        contact_website: "https://www.aurajyotishkendra.com",
+        questions_prompt: "Questions?",
+      },
+  // English page HTML translations end
+      // Refund Policy
+      refund: {
+        title: "Refund & Cancellation Policy",
+        updated: "Last updated: 23/10/2025",
+        intro: "Thank you for purchasing astrology consultation services from Aura Jyotish Kendra. Please read our Refund Policy carefully to understand the conditions under which refunds may or may not be provided.",
+        s1_title: "1. Nature of Services",
+        s1_p1: "All astrology consultations, reports, and analyses provided by Aura Jyotish Kendra are personalized digital services. Once the service is delivered via email or वॉट्सऐप, it is considered successfully completed. As such, refunds are not automatically applicable after delivery.",
+        s2_title: "2. Eligibility for Refunds",
+        s2_intro: "Refunds may only be issued under the following exceptional circumstances:",
+        s2_li1: "You have made a duplicate payment for the same service.",
+        s2_li2: "You have not received your consultation or report within the promised delivery time (i.e., within 2 business days from payment confirmation), and you have contacted us but not received a resolution.",
+        s2_li3: "We are unable to deliver the service due to unforeseen technical or operational reasons.",
+        s2_exclusions_intro: "Refunds will not be provided for:",
+        s2_ex1: "Change of mind after the service has been delivered.",
+        s2_ex2: "Dissatisfaction based on interpretation or outcome of the consultation.",
+        s2_ex3: "Incorrect or incomplete information provided by the customer.",
+        s3_title: "3. Refund Request Procedure",
+        s3_intro: "If you believe you are eligible for a refund, please follow these steps:",
+        s3_step1: "Contact us via email or वॉट्सऐप at support@aurajyotishkendra.com or +91 9829495886.",
+        s3_step2: "Provide your order ID, payment details, and reason for requesting a refund.",
+        s3_step3: "Our team will review your request within 2 business days and respond with the outcome.",
+        s4_title: "4. Partial Refunds (if applicable)",
+        s4_p1: "In certain cases, a partial refund may be issued — for example, if a portion of the service has been completed but not delivered due to unforeseen issues. Such refunds are determined at the discretion of Aura Jyotish Kendra management.",
+        s5_title: "5. No Refunds After Delivery",
+        s5_p1: "Once your astrology consultation or report has been delivered to your email or वॉट्सऐप, it is deemed as service completed and no refunds will be processed thereafter.",
+        s6_title: "6. Cancellation Policy",
+        s6_p1: "You may request to cancel your order within 6 hours of payment, provided work on your consultation has not yet begun. If preparation or analysis has already started, the order cannot be cancelled, and the payment will be considered final.",
+        contact_title: "7. Contact Us",
+        contact_p1: "For any queries or refund-related concerns, please contact us:",
+        contact_email: "support@aurajyotishkendra.com",
+        contact_phone: "+91 9829495886",
         contact_website: "https://www.aurajyotishkendra.com",
       },
     },
@@ -342,11 +512,174 @@ const resources = {
       legal: {
         terms_title: "नियम और शर्तें",
         privacy_title: "गोपनीयता नीति",
+        shipping_title: "शिपिंग नीति",
         refund_title: "रद्दीकरण और रिफंड नीति",
         contact_title: "संपर्क करें",
         contact_us: "हमसे संपर्क करें",
         changes_to_terms: "नियमों में परिवर्तन",
         changes_to_policy: "गोपनीयता नीति में परिवर्तन",
+        // जोड़ा गया: संपर्क पृष्ठ सामग्री (हिंदी)
+        contact_page: {
+          title: "हमसे संपर्क करें",
+          intro: "कोई प्रश्न, चिंता या सहायता चाहिए? Aura Jyotish Kendra की टीम आपकी मदद के लिए हमेशा तैयार है। आप हमसे निम्न माध्यमों से संपर्क कर सकते हैं।",
+          phone_heading: "📞 फ़ोन / वॉट्सऐप",
+          phone_text: "त्वरित सहायता के लिए हमें कॉल या वॉट्सऐप करें:",
+          phone_number: "+91 9829495886",
+          email_heading: "📧 ईमेल",
+          email_general_label: "सामान्य पूछताछ:",
+          email_general: "info@aurajyotishkendra.com",
+          email_support_label: "सपोर्ट और रिफंड:",
+          email_support: "support@aurajyotishkendra.com",
+          address_heading: "🏢 कार्यालय का पता",
+          address_name: "आभा ज्योतिष केंद्र",
+          address_country: "भारत",
+          hours_heading: "⏰ कार्य का समय",
+          hours_weekdays: "सोमवार – शनिवार: 10:00 AM – 7:00 PM IST",
+          hours_sunday: "रविवार: अवकाश",
+          response_heading: "💬 प्रतिक्रिया समय",
+          response_text: "हम आमतौर पर ईमेल और संदेशों का जवाब 24–48 घंटों के भीतर देते हैं। अत्यावश्यक मामलों के लिए, कृपया कार्य समय में सीधे कॉल करें।",
+          social_heading: "📌 सोशल मीडिया",
+          social_text: "अपडेट, लेख और ऑफ़र के लिए हमें फ़ॉलो करें:",
+          social_facebook: "फेसबुक",
+          social_instagram: "इंस्टाग्राम",
+          social_twitter: "ट्विटर (X)",
+          closing_text: "हम आपकी सहायता करने और Aura Jyotish Kendra के साथ आपका अनुभव सकारात्मक और सार्थक बनाने की आशा करते हैं।"
+        },
+      },
+      // Full page HTML for legal pages (Hindi)
+      
+      
+      
+      privacy: {
+        intro: "Aura Jyotish Kendra में, हम आपकी गोपनीयता का सम्मान करते हैं और आपकी व्यक्तिगत जानकारी की सुरक्षा के लिए प्रतिबद्ध हैं। यह गोपनीयता नीति बताती है कि हम कौन-सा डेटा एकत्र करते हैं, उसका उपयोग कैसे करते हैं, और उसे सुरक्षित रखने के लिए हम कौन-से कदम उठाते हैं।",
+        sections: [
+          {
+            title: "1. हम कौन-सी जानकारी एकत्र करते हैं",
+            bullets: [
+              "व्यक्तिगत जानकारी: नाम, ईमेल पता, फोन नंबर, पता, और जन्म विवरण (जन्म तिथि, समय और स्थान) जो पंजीकरण या सेवाएँ अनुरोध करते समय प्रदान किए जाते हैं।",
+              "भुगतान जानकारी: लेन-देन विवरण (सुरक्षित तृतीय-पक्ष गेटवे के माध्यम से संसाधित)। हम संवेदनशील कार्ड विवरण संग्रहीत नहीं करते।",
+              "तकनीकी जानकारी: IP पता, ब्राउज़र प्रकार, डिवाइस जानकारी, और उपयोग डेटा जो कुकीज़ और एनालिटिक्स टूल के माध्यम से एकत्र किया जाता है।"
+            ]
+          },
+          {
+            title: "2. आपकी जानकारी का उपयोग कैसे करते हैं",
+            bullets: [
+              "व्यक्तिगत ज्योतिषीय रिपोर्ट और परामर्श तैयार करने के लिए।",
+              "भुगतान को सुरक्षित रूप से संसाधित करने और लेन-देन की पुष्टि करने के लिए।",
+              "सेवा से संबंधित अपडेट, रिमाइंडर या ग्राहक सहायता उत्तर संप्रेषित करने के लिए।",
+              "हमारी सेवाओं, वेबसाइट प्रदर्शन और उपयोगकर्ता अनुभव में सुधार करने के लिए।",
+              "न्यूज़लेटर, प्रमोशन या ऑफ़र भेजने के लिए (केवल तभी जब आपने सहमति दी हो/ऑप्ट-इन किया हो)।"
+            ]
+          },
+          {
+            title: "3. डेटा साझाकरण और प्रकटीकरण",
+            paragraphs: [
+              "हम आपकी व्यक्तिगत जानकारी को बेचते, किराए पर देते या व्यापार नहीं करते।",
+              "हालाँकि, निम्न सीमित परिस्थितियों में हम डेटा साझा कर सकते हैं:"
+            ],
+            bullets: [
+              "विश्वसनीय तृतीय-पक्ष सेवा प्रदाताओं के साथ, जैसे भुगतान प्रोसेसर, होस्टिंग प्रदाता और संचार प्लेटफ़ॉर्म।",
+              "कानूनी प्राधिकरणों के साथ, यदि कानून, विनियमन या न्यायालय के आदेश द्वारा आवश्यक हो।"
+            ]
+          },
+          {
+            title: "4. डेटा सुरक्षा",
+            paragraphs: [
+              "हम आपकी जानकारी की रक्षा के लिए SSL एन्क्रिप्शन, सुरक्षित सर्वर और फ़ायरवॉल जैसे उद्योग-मानक सुरक्षा उपायों का उपयोग करते हैं।",
+              "हालाँकि, ऑनलाइन प्रसारण का कोई भी तरीका 100% सुरक्षित नहीं होता, और हम पूर्ण सुरक्षा की गारंटी नहीं दे सकते।"
+            ]
+          },
+          {
+            title: "5. कुकीज़ और ट्रैकिंग",
+            paragraphs: [
+              "हमारी वेबसाइट उपयोगकर्ता अनुभव को बेहतर बनाने, पसंद याद रखने और ट्रैफ़िक का विश्लेषण करने के लिए कुकीज़ का उपयोग करती है।",
+              "आप अपने ब्राउज़र सेटिंग्स में कुकीज़ को अक्षम कर सकते हैं, लेकिन साइट की कुछ सुविधाएँ सही ढंग से काम नहीं कर सकतीं।"
+            ]
+          },
+          {
+            title: "6. आपके अधिकार",
+            bullets: [
+              "आप हमारे पास उपलब्ध अपने व्यक्तिगत डेटा तक पहुँच का अनुरोध कर सकते हैं।",
+              "यदि आपका डेटा गलत है तो सुधार का अनुरोध कर सकते हैं।",
+              "कानूनी या संविदात्मक बाधाओं के अधीन, आप अपने डेटा को हटाने का अनुरोध कर सकते हैं।",
+              "आप किसी भी समय प्रचारात्मक संचार प्राप्त करने से बाहर निकल सकते हैं (ऑप्ट-आउट कर सकते हैं)।"
+            ]
+          },
+          {
+            title: "7. तृतीय-पक्ष लिंक",
+            paragraphs: [
+              "हमारी वेबसाइट में तृतीय-पक्ष वेबसाइटों के लिंक शामिल हो सकते हैं।",
+              "ऐसी बाहरी साइटों की सामग्री, सुरक्षा या गोपनीयता अभ्यास के लिए हम जिम्मेदार नहीं हैं।"
+            ]
+          },
+          {
+            title: "8. गोपनीयता नीति में परिवर्तन",
+            paragraphs: [
+              "Aura Jyotish Kendra इस गोपनीयता नीति को किसी भी समय अपडेट या संशोधित करने का अधिकार रखता है।",
+              "कोई भी परिवर्तन इस पृष्ठ पर पोस्ट किए जाने के तुरंत बाद प्रभावी होंगे।"
+            ]
+          }
+        ]
+      },
+      // Terms & Conditions (Hindi)
+      terms: {
+        intro_welcome: "स्वागत है",
+        intro_after_name: "(\"हम\", \"हमारा\", \"हमें\"). हमारी वेबसाइट, सेवाएँ या सामग्री का उपयोग करके, आप इन नियमों और शर्तों से सहमत होते हैं। कृपया हमारी सेवाएँ उपयोग करने से पहले इन्हें ध्यान से पढ़ें।",
+        s1_title: "प्रदान की जाने वाली सेवाएँ",
+        s1_p1: "हम ज्योतिष से संबंधित सेवाएँ प्रदान करते हैं जैसे राशिफल पढ़ना, व्यक्तिगत रिपोर्ट, परामर्श, उपाय और आध्यात्मिक मार्गदर्शन। ये सेवाएँ व्यक्तिगत मार्गदर्शन और आध्यात्मिक जागरूकता के लिए हैं। यह चिकित्सा, वित्तीय या कानूनी सलाह का विकल्प नहीं हैं।",
+        s2_title: "पात्रता",
+        s2_p1: "हमारी सेवाओं का उपयोग करने के लिए आपकी आयु 18 वर्ष या उससे अधिक होनी चाहिए। यदि आपकी आयु 18 वर्ष से कम है, तो आप केवल माता-पिता या अभिभावक की देखरेख में सेवाओं का उपयोग कर सकते हैं। आप सहमति देते हैं कि आप द्वारा दी गई सभी जानकारी (जैसे जन्म विवरण, संपर्क जानकारी और भुगतान विवरण) सटीक और पूर्ण है।",
+        s3_title: "उपयोगकर्ता की जिम्मेदारियाँ",
+        s3_p1: "आप सहमति देते हैं कि आप हमारी सेवाओं का दुरुपयोग नहीं करेंगे, हानिकारक सामग्री अपलोड नहीं करेंगे, या हमारे प्लेटफ़ॉर्म के माध्यम से अवैध गतिविधियों में संलग्न नहीं होंगे। आप अपने खाते की जानकारी (यदि लागू हो) की गोपनीयता बनाए रखने के लिए जिम्मेदार हैं।",
+        s4_title: "परिणामों की कोई गारंटी नहीं",
+        s4_p1: "ज्योतिष व्याख्यात्मक प्रकृति का है और यद्यपि हम सटीकता के लिए प्रयास करते हैं, परिणाम भिन्न हो सकते हैं। हम भविष्यवाणियों, उपायों या परामर्शों की सटीकता, प्रभावशीलता या परिणामों की गारंटी नहीं देते। हमारी सेवाओं के आधार पर आप द्वारा लिए गए किसी भी निर्णय की जिम्मेदारी केवल आपकी है।",
+        s5_title: "भुगतान और रिफंड",
+        s5_p1: "सभी सेवाओं के लिए अग्रिम भुगतान आवश्यक है। मूल्य हमारे विवेक पर बदल सकते हैं। हम संवेदनशील भुगतान जानकारी संग्रहीत नहीं करते। रिफंड और रद्दीकरण हमारी",
+        s5_link_label: "रद्दीकरण और रिफंड नीति",
+        s6_title: "देयता की सीमा",
+        s6_p1: "Aura Jyotish Kendra आपकी सेवाओं के उपयोग से उत्पन्न किसी भी प्रत्यक्ष, अप्रत्यक्ष, आकस्मिक या परिणामी क्षति के लिए जिम्मेदार नहीं होगा। हमारी अधिकतम देयता उस राशि तक सीमित होगी जो आपने विशिष्ट सेवा के लिए भुगतान की है।",
+        s7_title: "बौद्धिक संपदा",
+        s7_p1: "हमारी वेबसाइट पर सभी सामग्री, जैसे रिपोर्ट, ग्राफिक्स, पाठ और डिज़ाइन, Aura Jyotish Kendra की बौद्धिक संपदा है। आप बिना पूर्व लिखित अनुमति के हमारी सामग्री की प्रतिलिपि, वितरण या पुनरुत्पादन नहीं कर सकते।",
+        s8_title: "सेवाओं का समापन",
+        s8_p1: "यदि आप इन नियमों का उल्लंघन करते हैं, प्लेटफ़ॉर्म का दुरुपयोग करते हैं, या धोखाधड़ी गतिविधियों में संलग्न होते हैं, तो हम आपकी सेवाओं तक पहुँच को निलंबित या समाप्त करने का अधिकार रखते हैं।",
+        s9_title: "प्रभावी कानून",
+        s9_p1: "ये नियम और शर्तें भारत के कानूनों द्वारा शासित हैं। किसी भी विवाद का अधिकार क्षेत्र [आपका शहर, राज्य] में स्थित न्यायालयों को होगा।",
+        s10_title: "नियमों में परिवर्तन",
+        s10_p1: "हम किसी भी समय इन नियमों को अपडेट या संशोधित करने का अधिकार रखते हैं। कोई भी परिवर्तन इस पृष्ठ पर प्रकाशित किया जाएगा। हमारी सेवाओं का निरंतर उपयोग यह दर्शाता है कि आप संशोधित नियमों को स्वीकार करते हैं।",
+        questions_prompt: "कोई प्रश्न?",
+      },
+      // Refund Policy (Hindi)
+      refund: {
+        title: "रद्दीकरण और रिफंड नीति",
+        updated: "अंतिम अद्यतन: 23/10/2025",
+        intro: "Aura Jyotish Kendra से ज्योतिष परामर्श सेवाएँ खरीदने के लिए धन्यवाद। कृपया हमारी रिफंड नीति ध्यान से पढ़ें ताकि आप समझ सकें किन परिस्थितियों में रिफंड दिया जा सकता है।",
+        s1_title: "1. सेवाओं का स्वरूप",
+        s1_p1: "सभी ज्योतिष परामर्श, रिपोर्ट और विश्लेषण व्यक्तिगत डिजिटल सेवाएँ हैं। एक बार सेवा ईमेल या वॉट्सऐप के माध्यम से भेज दी गई, तो इसे पूरा माना जाता है। इसलिए डिलीवरी के बाद रिफंड स्वचालित रूप से लागू नहीं होते।",
+        s2_title: "2. रिफंड के लिए पात्रता",
+        s2_intro: "रिफंड केवल निम्न असाधारण परिस्थितियों में ही जारी किए जा सकते हैं:",
+        s2_li1: "आपने एक ही सेवा के लिए डुप्लिकेट भुगतान किया है।",
+        s2_li2: "आपने वादे किए गए समय (भुगतान पुष्टिकरण से 2 व्यावसायिक दिनों के भीतर) में अपनी परामर्श या रिपोर्ट प्राप्त नहीं की है और आपने संपर्क किया है पर समाधान नहीं मिला।",
+        s2_li3: "तकनीकी या परिचालन कारणों से हम सेवा प्रदान करने में असमर्थ हैं।",
+        s2_exclusions_intro: "रिफंड निम्न स्थितियों में प्रदान नहीं किए जाएंगे:",
+        s2_ex1: "सेवा प्रदान किए जाने के बाद मन बदलना।",
+        s2_ex2: "परामर्श की व्याख्या या परिणाम से असंतोष।",
+        s2_ex3: "ग्राहक द्वारा गलत या अधूरी जानकारी प्रदान करना।",
+        s3_title: "3. रिफंड अनुरोध प्रक्रिया",
+        s3_intro: "यदि आप रिफंड के योग्य हैं, तो कृपया निम्न चरणों का पालन करें:",
+        s3_step1: "हमें ईमेल या वॉट्सऐप के माध्यम से support@aurajyotishkendra.com या +91 9829495886 पर संपर्क करें।",
+        s3_step2: "हमें अपना ऑर्डर आईडी, भुगतान विवरण और रिफंड का कारण प्रदान करें।",
+        s3_step3: "हमारी टीम 2 व्यावसायिक दिनों के भीतर आपके अनुरोध की समीक्षा करेगी और परिणाम के बारे में सूचित करेगी।",
+        s4_title: "4. आंशिक रिफंड (यदि लागू हो)",
+        s4_p1: "कुछ मामलों में आंशिक रिफंड जारी किए जा सकते हैं — उदाहरण के लिए, यदि सेवा का एक भाग पूरा हो गया लेकिन अनपेक्षित कारणों से वितरित नहीं हुआ। ऐसे रिफंड Aura Jyotish Kendra प्रबंधन के विवेक पर निर्धारित किए जाएंगे।",
+        s5_title: "5. वितरण के बाद कोई रिफंड नहीं",
+        s5_p1: "एक बार आपकी परामर्श या रिपोर्ट आपके ईमेल या वॉट्सऐप पर भेज दी गई, तो सेवा को पूरा माना जाएगा और उसके बाद रिफंड संसाधित नहीं किए जाएंगे।",
+        s6_title: "6. रद्दीकरण नीति",
+        s6_p1: "आप भुगतान के 6 घंटे के भीतर अपना ऑर्डर रद्द करने का अनुरोध कर सकते हैं, बशर्ते कि आपकी परामर्श पर काम शुरू न हुआ हो। यदि तैयारी या विश्लेषण पहले से शुरू हो चुका है, तो ऑर्डर रद्द नहीं किया जा सकता और भुगतान अंतिम माना जाएगा।",
+        contact_title: "7. हमसे संपर्क करें",
+        contact_p1: "किसी भी प्रश्न या रिफंड-संबंधी चिंताओं के लिए कृपया हमसे संपर्क करें:",
+        contact_email: "support@aurajyotishkendra.com",
+        contact_phone: "+91 9829495886",
+        contact_website: "https://www.aurajyotishkendra.com",
       },
       // Shipping Policy
       shipping: {
@@ -355,35 +688,41 @@ const resources = {
         intro: "आपकी ज्योतिष परामर्श आवश्यकताओं के लिए Aura Jyotish Kendra चुनने के लिए धन्यवाद। कृपया हमारी शिपिंग नीति को ध्यानपूर्वक पढ़ें ताकि आप समझ सकें कि हम अपनी सेवाओं को कैसे संसाधित और वितरित करते हैं।",
         order_processing_title: "1. ऑर्डर प्रोसेसिंग",
         order_processing_p1: "हमारी सभी ज्योतिष परामर्श और रिपोर्टें डिजिटल रूप में प्रदान की जाती हैं — हम कोई भौतिक शिपमेंट या मुद्रित प्रतियां नहीं देते।",
-        op_li1: "ऑर्डर पुष्टिकरण: जैसा ही आपका भुगतान Razorpay के माध्यम से सफलतापूर्वक पूरा हो जाता है, आपको ईमेल या WhatsApp के माध्यम से आपके ऑर्डर विवरण सहित एक पुष्टिकरण संदेश प्राप्त होगा।",
+        op_li1: "ऑर्डर पुष्टिकरण: जैसा ही आपका भुगतान Razorpay के माध्यम से सफलतापूर्वक पूरा हो जाता है, आपको ईमेल या वॉट्सऐप के माध्यम से आपके ऑर्डर विवरण सहित एक पुष्टिकरण संदेश प्राप्त होगा।",
         op_li2: "प्रोसेसिंग समय: हम भुगतान पुष्टिकरण के समय से 2 व्यावसायिक दिनों के भीतर आपकी ज्योतिष परामर्श या रिपोर्ट देने का लक्ष्य रखते हैं।",
-        op_li3: "वितरण चैनल: सभी डिजिटल परामर्श और रिपोर्टें आपकी द्वारा चेकआउट पर चुने गए संचार माध्यम (ईमेल या WhatsApp) के माध्यम से साझा की जाती हैं।",
+        op_li3: "वितरण चैनल: सभी डिजिटल परामर्श और रिपोर्टें आपकी द्वारा चेकआउट पर चुने गए संचार माध्यम (ईमेल या वॉट्सऐप) के माध्यम से साझा की जाती हैं।",
         delivery_timeline_title: "2. वितरण समयरेखा",
         delivery_timeline_p1: "हमारी सामान्य वितरण समयरेखा भुगतान पुष्टिकरण के बाद 48 घंटों (2 व्यावसायिक दिन) के भीतर है। यदि आपके ऑर्डर के लिए अतिरिक्त जानकारी (जैसे जन्म जानकारी या प्रश्न स्पष्टकरण) की आवश्यकता है, तो वितरण का समय आवश्यक जानकारी प्राप्त होने के बाद शुरू होगा।",
         delivery_method_title: "3. वितरण विधि",
         dm_p1: "चूंकि हमारी सेवाएँ डिजिटल हैं, वितरण इलेक्ट्रॉनिक रूप से किया जाता है।",
-        dm_li1: "ईमेल या WhatsApp के माध्यम से लिखित ज्योतिष रिपोर्ट या परामर्श सारांश, और/या",
-        dm_li2: "आपकी सेवा चयन के अनुसार WhatsApp चैट के माध्यम से प्रत्यक्ष परामर्श।",
+        dm_li1: "ईमेल या वॉट्सऐप के माध्यम से लिखित ज्योतिष रिपोर्ट या परामर्श सारांश, और/या",
+        dm_li2: "आपकी सेवा चयन के अनुसार वॉट्सऐप चैट के माध्यम से प्रत्यक्ष परामर्श।",
+        no_physical: "हम कोई भौतिक वस्तु नहीं भेजते हैं।",
         delays_title: "4. देरी या गैर-वितरण",
         delays_p1: "जबकि हम समय पर वितरण सुनिश्चित करने के लिए हर संभव प्रयास करते हैं, निम्नलिखित मामलों में देरी हो सकती है:",
         delays_li1: "ग्राहक द्वारा प्रदान की गई गलत या अधूरी संपर्क जानकारी।",
         delays_li2: "तकनीकी या इंटरनेट कनेक्टिविटी समस्याएँ।",
         delays_li3: "उच्च ऑर्डर मात्रा या अनपेक्षित परिस्थितियाँ।",
+        delays_contact_prefix: "यदि आपको देरी का सामना करना पड़े, तो कृपया हमसे संपर्क करें",
+        delays_contact_or: "या",
+        delays_contact_suffix: "पर सहायता के लिए",
         no_shipping_title: "5. शिपिंग शुल्क नहीं",
         no_shipping_p1: "चूंकि सभी सेवाएँ डिजिटल रूप में प्रदान की जाती हैं, किसी भी ऑर्डर पर कोई शिपिंग शुल्क या अतिरिक्त वितरण शुल्क लागू नहीं होते।",
         completion_title: "6. सेवा पूरा होना और स्वीकृति",
-        completion_p1: "एक बार आपकी परामर्श या रिपोर्ट ईमेल या WhatsApp के माध्यम से वितरित कर दी गई, सेवा को पूरा माना जाएगा। सफल वितरण की पुष्टि के लिए आपको एक पुष्टिकरण संदेश भी प्राप्त होगा।",
+        completion_p1: "एक बार आपकी परामर्श या रिपोर्ट ईमेल या वॉट्सऐप के माध्यम से वितरित कर दी गई, सेवा को पूरा माना जाएगा। सफल वितरण की पुष्टि के लिए आपको एक पुष्टिकरण संदेश भी प्राप्त होगा।",
         changes_title: "7. ऑर्डर या संपर्क विवरण में बदलाव",
-        changes_p1: "यदि आपने ऑर्डर करने के बाद अपना संपर्क जानकारी (ईमेल या WhatsApp नंबर) अपडेट करने की आवश्यकता है, तो कृपया हमें अपने ऑर्डर पुष्टिकरण के 12 घंटों के भीतर सूचित करें। संचार में किसी भी विलंब से समय पर वितरण प्रभावित हो सकता है।",
+        changes_p1: "यदि आपने ऑर्डर करने के बाद अपना संपर्क जानकारी (ईमेल या वॉट्सऐप नंबर) अपडेट करने की आवश्यकता है, तो कृपया हमें अपने ऑर्डर पुष्टिकरण के 12 घंटों के भीतर सूचित करें। संचार में किसी भी विलंब से समय पर वितरण प्रभावित हो सकता है।",
         refunds_title: "8. रिफंड और संशोधन",
         refunds_p1: "चूंकि ज्योतिष परामर्श व्यक्तिगत डिजिटल सेवाएँ हैं, एक बार प्रदान कर दिए जाने के बाद वे नॉन-रिफंडेबल होती हैं। हालांकि, यदि आप वचनबद्ध समयावधि के भीतर अपनी सेवा हमारे कारण प्राप्त नहीं करते हैं, तो हम अपनी विवेकाधिकार पर पूर्ण रिफंड या पुनःवितरण की पेशकश कर सकते हैं। अधिक जानकारी के लिए कृपया हमारी रिफंड नीति देखें।",
-        contact_title: "9. हमसे संपर्क करें",
+        contact_title: "9. संपर्क करें",
+        contact_intro: "डिलीवरी या शिपिंग से संबंधित किसी भी प्रश्न के लिए हमसे संपर्क करें:",
         contact_email_label: "ईमेल:",
         contact_email: "support@aurajyotishkendra.com",
-        contact_phone_label: "WhatsApp:",
+        contact_phone_label: "वॉट्सऐप:",
         contact_phone: "+91 9829495886",
         contact_website_label: "वेबसाइट:",
         contact_website: "https://www.aurajyotishkendra.com",
+        questions_prompt: "कोई प्रश्न?",
       },
     },
   },
