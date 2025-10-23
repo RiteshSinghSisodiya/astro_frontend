@@ -162,11 +162,11 @@ export default function App() {
                   <h3 className="text-xl font-bold bg-gradient-to-r from-yellow-400 to-purple-400 bg-clip-text text-transparent">
                     Aura Jyotish Kendra
                   </h3>
-                  <p className="text-xs text-gray-300">Cosmic Guidance & Wisdom</p>
+                  <p className="text-xs text-gray-300">{t("footer.brand_subtitle")}</p>
                 </div>
               </div>
               <p className="text-gray-300 text-sm leading-relaxed">
-                Illuminating your path through ancient wisdom and cosmic insights for over 34 years.
+                {t("footer.brand_description")}
               </p>
             </div>
 

@@ -8,6 +8,7 @@ export default function RefundPolicy() {
     <PageShell title={t("refund.title")}
     >
       <div className="bg-gradient-to-r from-purple-600/20 to-blue-600/20 p-6 rounded-xl border border-purple-400/30 mb-8">
+        <p className="text-white/70 text-sm text-center mb-2">{t("refund.updated")}</p>
         <p className="text-white/90 text-lg leading-relaxed text-center">{t("refund.intro")}</p>
       </div>
 

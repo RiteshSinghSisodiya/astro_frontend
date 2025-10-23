@@ -20,7 +20,7 @@ export default function ContactUs() {
       <h2 className="font-semibold mt-4">{t("legal.contact_page.email_heading")}</h2>
       <p>
         {t("legal.contact_page.email_general_label")} {" "}
-        <a href="mailto:info@aurajyotishkendra.com" className="text-blue-600 underline">
+        <a href="mailto:support@aurajyotishkendra.com" className="text-blue-600 underline">
           {t("legal.contact_page.email_general")}
         </a>
       </p>
