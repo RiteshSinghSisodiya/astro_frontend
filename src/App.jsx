@@ -142,8 +142,8 @@ export default function App() {
       <main className="flex-1 px-4 md:px-10">
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="/register" element={<Registration />} />
-          <Route path="/payment" element={<Payment />} />
+          <Route path="/register" element={<div className="text-center py-20 text-white">Registration is temporarily unavailable.</div>} />
+          <Route path="/payment" element={<div className="text-center py-20 text-white">Payments are temporarily disabled.</div>} />
           <Route path="/newpayment" element={<Newpay />} />
           <Route path="/success" element={<PaymentSuccess />} />
           <Route path="/upload-kundli" element={<UploadKundli />} />

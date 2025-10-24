@@ -55,8 +55,8 @@ export default function Services() {
             return (
               <button
                 key={svc.id}
-                onClick={() => startBooking(svc)}
-                className="text-left rounded-2xl p-5 bg-white/10 backdrop-blur-md shadow hover:scale-[1.02] transition"
+                disabled
+                className="text-left rounded-2xl p-5 bg-white/10 backdrop-blur-md shadow opacity-60 cursor-not-allowed"
               >
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="font-semibold text-lg">

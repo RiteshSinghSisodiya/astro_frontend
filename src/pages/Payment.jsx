@@ -17,7 +17,7 @@ export default function Payment() {
   }, [state, navigate])
 
   const createOrder = async (amount) => {
-    const res = await fetch('http://localhost:5080/api/create-order', {
+    const res = await fetch('https://astro-backend-txdw.onrender.com/api/create-order', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ amount })
@@ -52,7 +52,7 @@ export default function Payment() {
           contact: state.formData.phone
         },
         handler: async function (response) {
-          const verifyRes = await fetch('http://localhost:5080/api/verify', {
+          const verifyRes = await fetch('https://astro-backend-txdw.onrender.com/api/verify', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -64,7 +64,7 @@ export default function Payment() {
           if (data.success) {
             // Save to MongoDB
             try {
-              await fetch('http://localhost:5080/api/save-payment', {
+              await fetch('https://astro-backend-txdw.onrender.com/api/save-payment', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
