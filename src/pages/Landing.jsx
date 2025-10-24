@@ -159,11 +159,12 @@ export default function Landing() {
                       </div>
                     </div>
                   </div>
-                  {/* Register button temporarily hidden. Uncomment to enable registration.
-                  <button className="w-full mt-2 md:mt-4 bg-gradient-to-r from-yellow-300 to-orange-400 text-black py-2 md:py-3 rounded-lg md:rounded-xl font-semibold text-xs md:text-sm hover:from-yellow-400 hover:to-orange-500 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                  <button
+                    onClick={() => startBooking(svc)}
+                    className="w-full mt-2 md:mt-4 bg-gradient-to-r from-yellow-300 to-orange-400 text-black py-2 md:py-3 rounded-lg md:rounded-xl font-semibold text-xs md:text-sm hover:from-yellow-400 hover:to-orange-500 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                  >
                     {t("register")}
                   </button>
-                  */}
                 </div>
               );
             })}

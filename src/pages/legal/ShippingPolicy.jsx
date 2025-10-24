@@ -8,9 +8,6 @@ export default function ShippingPolicy() {
     <PageShell title={t("shipping.title")}>
       {/* Intro Section */}
       <div className="bg-gradient-to-r from-blue-600/20 to-cyan-600/20 p-6 rounded-xl border border-blue-400/30 mb-8">
-        <p className="text-white/70 text-sm text-center mb-2">
-          {t("shipping.updated")}
-        </p>
         <p className="text-white/90 text-lg leading-relaxed text-center">
           {t("shipping.intro")}
         </p>

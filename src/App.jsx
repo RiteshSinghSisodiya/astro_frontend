@@ -14,6 +14,7 @@ import logo from "./assets/logo.webp";
 import Services from "./pages/Service";
 import AboutUs from "./pages/AboutUs";
 import Newpay from "./pages/Newpay";
+import PaymentSuccess from "./pages/PaymentSuccess";
 
 export default function App() {
   const { t } = useTranslation();
@@ -24,6 +25,18 @@ export default function App() {
   useEffect(() => {
     document.documentElement.lang = i18n.language;
   }, [i18n.language]);
+
+  // Scroll to top when any <button> is clicked
+  useEffect(() => {
+    const onClick = (e) => {
+      const btn = e.target.closest('button');
+      if (btn) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    };
+    document.addEventListener('click', onClick);
+    return () => document.removeEventListener('click', onClick);
+  }, []);
 
   return (
     <div className="min-h-screen flex flex-col relative">
@@ -132,6 +145,7 @@ export default function App() {
           <Route path="/register" element={<Registration />} />
           <Route path="/payment" element={<Payment />} />
           <Route path="/newpayment" element={<Newpay />} />
+          <Route path="/success" element={<PaymentSuccess />} />
           <Route path="/upload-kundli" element={<UploadKundli />} />
           <Route path="/terms" element={<TermsAndConditions />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />

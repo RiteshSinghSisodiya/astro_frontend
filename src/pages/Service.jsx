@@ -20,6 +20,12 @@ export default function Services() {
   const [active, setActive] = useState(null)
   const { t } = useTranslation()
 
+  const calculateGSTPrice = (basePrice) => {
+    const gst = Math.round(basePrice * 0.18)
+    const total = basePrice + gst
+    return { basePrice, gst, total }
+  }
+
   const startBooking = (svc) => {
     setActive(svc)
     setTimeout(() => {
@@ -44,30 +50,33 @@ export default function Services() {
         <h2 className="text-3xl font-bold mb-8">{t("services_title")}</h2>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {SERVICES.map((svc) => (
-            <button
-              key={svc.id}
-              onClick={() => startBooking(svc)}
-              className="text-left rounded-2xl p-5 bg-white/10 backdrop-blur-md shadow hover:scale-[1.02] transition"
-            >
-              <div className="flex items-center justify-between mb-2">
-                <h3 className="font-semibold text-lg">
-                  {t(`services.${svc.id}.name`)}
-                </h3>
-                <span className="bg-yellow-300 text-black text-sm px-3 py-1 rounded-full">
-                  ₹{svc.price}
-                </span>
-              </div>
-              <p className="opacity-90 text-sm">
-                {t(`services.${svc.id}.description`)}
-              </p>
-              {active?.id === svc.id && (
-                <p className="mt-3 text-xs opacity-100">
-                  {t("opening_form") || "Opening form…"}
+          {SERVICES.map((svc) => {
+            const { total } = calculateGSTPrice(svc.price)
+            return (
+              <button
+                key={svc.id}
+                onClick={() => startBooking(svc)}
+                className="text-left rounded-2xl p-5 bg-white/10 backdrop-blur-md shadow hover:scale-[1.02] transition"
+              >
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="font-semibold text-lg">
+                    {t(`services.${svc.id}.name`)}
+                  </h3>
+                  <span className="bg-yellow-300 text-black text-sm px-3 py-1 rounded-full">
+                    ₹{total}
+                  </span>
+                </div>
+                <p className="opacity-90 text-sm">
+                  {t(`services.${svc.id}.description`)}
                 </p>
-              )}
-            </button>
-          ))}
+                {active?.id === svc.id && (
+                  <p className="mt-3 text-xs opacity-100">
+                    {t("opening_form") || "Opening form…"}
+                  </p>
+                )}
+              </button>
+            )
+          })}
         </div>
       </div>
     </section>

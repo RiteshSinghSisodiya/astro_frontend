@@ -5,7 +5,7 @@ import astroBg from '../assets/astro.jpg'
 export default function Payment() {
   const { state } = useLocation()
   const navigate = useNavigate()
-  const amount = state?.price || 1
+  const amount = state?.formData?.amount ?? state?.price ?? 1
   const [formData, setFormData] = useState(() => ({
     ...state?.formData,
     amount: amount
@@ -17,7 +17,7 @@ export default function Payment() {
   }, [state, navigate])
 
   const createOrder = async (amount) => {
-    const res = await fetch('http://localhost:4000/api/create-order', {
+    const res = await fetch('http://localhost:5080/api/create-order', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ amount })
@@ -52,7 +52,7 @@ export default function Payment() {
           contact: state.formData.phone
         },
         handler: async function (response) {
-          const verifyRes = await fetch('http://localhost:4000/api/verify', {
+          const verifyRes = await fetch('http://localhost:5080/api/verify', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -62,8 +62,31 @@ export default function Payment() {
           })
           const data = await verifyRes.json()
           if (data.success) {
-            alert('Payment successful! Confirmation email sent.')
-            navigate('/')
+            // Save to MongoDB
+            try {
+              await fetch('http://localhost:5080/api/save-payment', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                  ...formData,
+                  orderId: response.razorpay_order_id,
+                  paymentId: response.razorpay_payment_id,
+                }),
+              })
+            } catch (err) {
+              console.error('Failed to save payment:', err)
+            }
+
+            navigate('/success', {
+              state: {
+                fullName: formData.fullName,
+                email: formData.email,
+                phone: formData.phone,
+                amount: formData.amount,
+                paymentId: response.razorpay_payment_id,
+                orderId: response.razorpay_order_id,
+              },
+            })
           } else {
             alert('Verification failed.')
           }
