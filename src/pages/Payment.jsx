@@ -2,6 +2,9 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import astroBg from '../assets/astro.jpg' 
 
+// Use environment-driven API base URL, fallback to local dev
+const API_BASE = import.meta.env.VITE_API_BASE_URL;
+
 export default function Payment() {
   const { state } = useLocation()
   const navigate = useNavigate()
@@ -17,7 +20,7 @@ export default function Payment() {
   }, [state, navigate])
 
   const createOrder = async (amount) => {
-    const res = await fetch('https://astro-backend-txdw.onrender.com/api/create-order', {
+    const res = await fetch(`${API_BASE}/api/create-order`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ amount })
@@ -52,7 +55,7 @@ export default function Payment() {
           contact: state.formData.phone
         },
         handler: async function (response) {
-          const verifyRes = await fetch('https://astro-backend-txdw.onrender.com/api/verify', {
+          const verifyRes = await fetch(`${API_BASE}/api/verify`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -64,7 +67,7 @@ export default function Payment() {
           if (data.success) {
             // Save to MongoDB
             try {
-              await fetch('https://astro-backend-txdw.onrender.com/api/save-payment', {
+              await fetch(`${API_BASE}/api/save-payment`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
