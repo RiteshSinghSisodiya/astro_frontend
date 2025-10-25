@@ -37,7 +37,7 @@ export default function PageShell({ title, children }) {
             </div>
           </div>
 
-          {/* Decorative Elements */}
+          {/* Decorative Elements  */}
           <div className="flex justify-center mt-12">
             <div className="flex space-x-4">
               <div className="w-3 h-3 bg-yellow-400 rounded-full animate-bounce"></div>
