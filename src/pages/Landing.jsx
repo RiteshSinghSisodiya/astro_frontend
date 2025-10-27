@@ -159,7 +159,12 @@ export default function Landing() {
                       </div>
                     </div>
                   </div>
-
+                  <button
+                    onClick={() => startBooking(svc)}
+                    className="w-full mt-2 md:mt-3 py-2 md:py-3 rounded-xl bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-semibold hover:from-yellow-500 hover:to-orange-600 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
+                  >
+                    {t("register")}
+                  </button>
                 </div>
               );
             })}
