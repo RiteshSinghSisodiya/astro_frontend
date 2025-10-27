@@ -10,6 +10,10 @@
   </head>
   <body class="min-h-screen">
     <div id="root"></div>
+    <!-- Runtime override for API base URL (works without rebuild) -->
+    <script>
+      window.__API_BASE_URL__ = window.__API_BASE_URL__ || "https://astro-backend-txdw.onrender.com";
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
