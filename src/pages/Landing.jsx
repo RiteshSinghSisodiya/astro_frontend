@@ -76,7 +76,7 @@ export default function Landing() {
               </p>
 
               <ul className="space-y-3 mb-10 text-white/90">
-                <li className="flex items-center"><span className="text-yellow-300 mr-2">✦</span> {t("astro_points_p1")}</li>
+                {/* <li className="flex items-center"><span className="text-yellow-300 mr-2">✦</span> {t("astro_points_p1")}</li> */}
                 <li className="flex items-center"><span className="text-yellow-300 mr-2">✦</span> {t("astro_points_p2")}</li>
                 <li className="flex items-center"><span className="text-yellow-300 mr-2">✦</span> {t("astro_points_p3")}</li>
                 <li className="flex items-center"><span className="text-yellow-300 mr-2">✦</span> {t("experience_years")}</li>
