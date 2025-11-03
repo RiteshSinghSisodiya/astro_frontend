@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import astrologerImg from "../assets/best_astrologer.jpg";
 
 const STATS = [
   { id: 'experience', value: '34+', label: 'about.stats.experience' },
@@ -31,6 +32,44 @@ export default function AboutUs() {
           </p>
         </div>
       </section>
+
+      <section className="container mx-auto px-6 md:px-10 py-20">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-12 bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
+            {t('about.our_astrologer.title')}
+          </h2>
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            {/* Image */}
+            <div className="flex justify-center">
+              <img
+                src={astrologerImg}
+                alt="Best Astrologer"
+                className="rounded-full shadow-xl w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover border-4 border-purple-200"
+              />
+            </div>
+            {/* Content */}
+            <div className="bg-white rounded-2xl shadow-lg p-8 md:p-10 border">
+              <h3 className="text-2xl font-bold text-purple-700 mb-4">{t('about.our_astrologer.name')}</h3>
+              <ul className="space-y-4">
+                <li>
+                  <span className="font-semibold text-pink-600">{t('about.our_astrologer.experience.label')}</span>
+                  <span className="ml-2 text-zinc-700">{t('about.our_astrologer.experience.text')}</span>
+                </li>
+                <li>
+                  <span className="font-semibold text-pink-600">{t('about.our_astrologer.history.label')}</span>
+                  <span className="ml-2 text-zinc-700">{t('about.our_astrologer.history.text')}</span>
+                </li>
+                <li>
+                  <span className="font-semibold text-pink-600">{t('about.our_astrologer.expertise.label')}</span>
+                  <span className="ml-2 text-zinc-700">{t('about.our_astrologer.expertise.text')}</span>
+                </li>
+                <li>
+                  <span className="font-semibold text-pink-600">{t('about.our_astrologer.values.label')}</span>
+                  <span className="ml-2 text-zinc-700">{t('about.our_astrologer.values.text')}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
       {/* Stats */}
       <section className="container mx-auto px-6 md:px-10 pb-20">
@@ -101,6 +140,9 @@ export default function AboutUs() {
           </p>
         </div>
       </section>
+
+        {/* Our Astrologer Section */}
+        
     </div>
   )
 }

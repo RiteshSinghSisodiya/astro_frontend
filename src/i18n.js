@@ -119,6 +119,26 @@ const resources = {
             desc: "Reliable and timely delivery of consultations and remedies.",
           },
         },
+        our_astrologer: {
+          title: "Our Astrologer",
+          name: "Acharya Ganesh Srivastava",
+          experience: {
+            label: "Experience:",
+            text: "34+ years in Vedic astrology, guiding thousands of clients worldwide.",
+          },
+          history: {
+            label: "History:",
+            text: "Renowned Mahamahopadhyaya, carrying forward a legacy of wisdom and service in astrology.",
+          },
+          expertise: {
+            label: "Expertise:",
+            text: "Kundli analysis, marriage matching, career guidance, gemstone recommendations, and astrological remedies.",
+          },
+          values: {
+            label: "Values & Beliefs:",
+            text: "Integrity, compassion, and a commitment to authentic Vedic traditions. Believes in empowering individuals through knowledge and spiritual guidance.",
+          },
+        },
         final_who_we_are: {
           title: "Guiding You with Wisdom",
           description:
@@ -170,7 +190,7 @@ const resources = {
           email_support_label: "Support :",
           email_support: "support@aurajyotishkendra.com",
           address_heading: "🏢 Office Address",
-          address_name: "Aura Jyotish Kendra",
+          address_name: "21, Knowledge Park III, Greater Noida",
           address_country: "India",
           hours_heading: "⏰ Business Hours",
           hours_weekdays: "Monday – Saturday: 10:00 AM – 7:00 PM IST",
@@ -484,6 +504,26 @@ const resources = {
             desc: "परामर्श और उपाय समय पर और विश्वसनीय रूप से प्रदान किए जाते हैं।",
           },
         },
+        our_astrologer: {
+          title: "हमारे ज्योतिषाचार्य",
+          name: "आचार्य गणेश श्रीवास्तव",
+          experience: {
+            label: "अनुभव:",
+            text: "वैदिक ज्योतिष में 34+ वर्षों का अनुभव, दुनिया भर के हजारों ग्राहकों का मार्गदर्शन।",
+          },
+          history: {
+            label: "इतिहास:",
+            text: "प्रसिद्ध महामहोपाध्याय, ज्योतिष में ज्ञान और सेवा की परंपरा को आगे बढ़ाते हुए।",
+          },
+          expertise: {
+            label: "विशेषज्ञता:",
+            text: "कुंडली विश्लेषण, विवाह मिलान, करियर मार्गदर्शन, रत्न सुझाव, और ज्योतिषीय उपाय।",
+          },
+          values: {
+            label: "मूल्य और विश्वास:",
+            text: "ईमानदारी, करुणा, और प्रामाणिक वैदिक परंपराओं के प्रति प्रतिबद्धता। ज्ञान और आध्यात्मिक मार्गदर्शन के माध्यम से व्यक्तियों को सशक्त बनाने में विश्वास।",
+            },
+        },
         final_who_we_are: {
           title: "बुद्धिमत्ता से आपका मार्गदर्शन",
           description:
@@ -536,7 +576,7 @@ const resources = {
           email_support: "support@aurajyotishkendra.com",
           address_heading: "🏢 कार्यालय का पता",
           address_name: "आभा ज्योतिष केंद्र",
-          address_country: "भारत",
+          address_country: "21, नॉलेज पार्क III, ग्रेटर नोएडा",
           hours_heading: "⏰ कार्य का समय",
           hours_weekdays: "सोमवार – शनिवार: 10:00 AM – 7:00 PM IST",
           hours_sunday: "रविवार: अवकाश",
