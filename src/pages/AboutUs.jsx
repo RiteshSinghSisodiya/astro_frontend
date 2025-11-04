@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import astrologerImg from "../assets/best_astrologer.jpg";
+import astroVideo from "../assets/astro_video.mp4";
 
 const STATS = [
   { id: 'experience', value: '34+', label: 'about.stats.experience' },
@@ -20,21 +21,36 @@ export default function AboutUs() {
   const [year] = useState(new Date().getFullYear())
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-zinc-50 via-white to-zinc-100">
+    <div className="relative min-h-screen">
+      {/* Background Video */}
+      <div className="fixed inset-0 z-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          className="w-full h-full object-cover"
+        >
+          <source src={astroVideo} type="video/mp4" />
+        </video>
+      </div>
+      {/* Subtle dim/blur overlay for readability (scoped to page content, not footer) */}
+      <div className="absolute inset-0 bg-black/20 backdrop-blur-[5px] z-10 pointer-events-none" />
       {/* Who we are */}
-      <section className="container mx-auto px-6 md:px-10 py-24 md:py-32">
+      <section className="container mx-auto px-6 md:px-10 py-24 md:py-32 relative z-20">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent mb-8">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white drop-shadow-md mb-8">
             {t('about.who_we_are.title')}
           </h1>
-          <p className="text-lg md:text-xl text-zinc-600 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-white leading-relaxed max-w-3xl mx-auto">
             {t('about.who_we_are.description')}
           </p>
         </div>
       </section>
 
-      <section className="container mx-auto px-6 md:px-10 py-20">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-12 bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
+      <section className="container mx-auto px-6 md:px-10 py-20 relative z-20">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-12 text-white drop-shadow-md">
             {t('about.our_astrologer.title')}
           </h2>
           <div className="grid md:grid-cols-2 gap-10 items-center">
@@ -72,7 +88,7 @@ export default function AboutUs() {
         </section>
 
       {/* Stats */}
-      <section className="container mx-auto px-6 md:px-10 pb-20">
+      <section className="container mx-auto px-6 md:px-10 pb-20 relative z-20">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
           {STATS.map((s) => (
             <div
@@ -87,7 +103,7 @@ export default function AboutUs() {
       </section>
 
       {/* Mission & Approach */}
-      <section className="container mx-auto px-6 md:px-10 py-20">
+      <section className="container mx-auto px-6 md:px-10 py-20 relative z-20">
         <div className="grid gap-10 md:grid-cols-2">
           <div className="rounded-2xl border bg-white shadow-lg p-8 md:p-10 hover:shadow-2xl transition duration-300">
             <h2 className="text-2xl font-bold mb-3 text-purple-700">
@@ -110,8 +126,8 @@ export default function AboutUs() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="container mx-auto px-4 py-16">
-        <h2 className="mb-10 text-3xl md:text-4xl font-extrabold text-center bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
+      <section className="container mx-auto px-4 py-16 relative z-20">
+        <h2 className="mb-10 text-3xl md:text-4xl font-extrabold text-center text-white drop-shadow-md">
           {t('about.why_choose_us.title')}
         </h2>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -130,12 +146,12 @@ export default function AboutUs() {
       </section>
 
       {/* Final Who We Are */}
-      <section className="container mx-auto px-6 md:px-10 py-24 md:py-32">
+      <section className="container mx-auto px-6 md:px-10 py-24 md:py-32 relative z-20">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-pink-600">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-white drop-shadow-md">
             {t('about.final_who_we_are.title')}
           </h2>
-          <p className="text-lg md:text-xl text-zinc-600 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-white leading-relaxed max-w-3xl mx-auto">
             {t('about.final_who_we_are.description')}
           </p>
         </div>
