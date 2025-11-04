@@ -59,8 +59,8 @@ export default function Landing() {
             <LanguageSelector />
           </div>
 
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8 animate-slide-up">
+          <div className="grid grid-cols-1 gap-12 items-start">
+            <div className="space-y-8 animate-slide-up max-w-4xl">
               {/* Legacy Content - Made Bigger and More Prominent */}
               <div className="bg-gradient-to-r from-yellow-400/20 to-orange-400/20 backdrop-blur-sm rounded-2xl p-6 border border-yellow-300/30 shadow-2xl">
                 <p className="text-xl md:text-2xl lg:text-3xl text-yellow-300 mb-4 font-semibold leading-relaxed text-center">
@@ -71,7 +71,7 @@ export default function Landing() {
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight drop-shadow-md bg-gradient-to-r from-white to-yellow-200 bg-clip-text text-transparent">
                 {t("tagline")}
               </h2>
-              <p className="text-white/90 mb-8 max-w-md text-lg leading-relaxed">
+              <p className="text-white/90 mb-8 text-lg leading-relaxed">
                 {t("aura_intro")}
               </p>
 
@@ -84,13 +84,7 @@ export default function Landing() {
               </ul>
             </div>
 
-            <div className="rounded-2xl bg-white/10 backdrop-blur-md p-8 shadow-lg">
-              <img
-                className="w-full h-80 object-cover rounded-xl shadow-lg"
-                src={zodiacImg}
-                alt="Astrology"
-              />
-            </div>
+            {/* Image removed as requested; content stretched */}
           </div>
         </div>
       </section>

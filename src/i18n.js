@@ -27,7 +27,7 @@ const resources = {
       kundli_count: "150,000+ Kundlis Prepared",
 
       legacy_title:
-        "Honoring the Legacy of Late Pandit Kalyan Dutt Sharma: A Renowned Mahamahopadhyaya and Scholar.",
+        "Discover the light of astrology that guides you toward happiness, balance, and fulfillment. At AURA JYOTISH KENDRA, we combine the timeless wisdom of Vedic astrology with modern understanding to help you overcome life’s challenges and embrace positivity. Our goal is to reconnect you with your true self and help you move forward with clarity and confidence.",
       tagline: "Helping You To Bring Back Your Smile.",
       aura_intro:
         "Experts of AURA JYOTISH KENDRA provide personalized astrological guidance to help individuals understand their life path and regain their sense of joy.",
@@ -128,7 +128,7 @@ const resources = {
           },
           history: {
             label: "History:",
-            text: "Renowned Mahamahopadhyaya, carrying forward a legacy of wisdom and service in astrology.",
+            text: "Renowned Astrologer, carrying forward a legacy of wisdom and service in astrology.",
           },
           expertise: {
             label: "Expertise:",
@@ -412,7 +412,7 @@ const resources = {
       kundli_count: "150,000+ कुंडलियाँ तैयार",
 
       legacy_title:
-        "स्वर्गीय पंडित कल्याण दत्त शर्मा की विरासत का सम्मान: एक प्रसिद्ध महामहोपाध्याय और विद्वान।",
+        "ज्योतिष के उस प्रकाश की खोज करें जो आपको खुशी, संतुलन और पूर्णता की ओर मार्गदर्शन करता है। आभा ज्योतिष केंद्र में हम वैदिक ज्योतिष की शाश्वत ज्ञान परंपरा को आधुनिक समझ के साथ जोड़कर आपके जीवन की चुनौतियों को पार करने और सकारात्मकता अपनाने में सहायता करते हैं। हमारा उद्देश्य है कि आप अपने सच्चे स्वरूप से पुनः जुड़ें और स्पष्टता व आत्मविश्वास के साथ आगे बढ़ें।",
       tagline: "आपकी मुस्कान वापस लाने में मदद।",
       aura_intro:
         "आभा ज्योतिष केंद्र के विशेषज्ञ व्यक्तिगत ज्योतिषीय मार्गदर्शन प्रदान करते हैं ताकि लोग अपने जीवन पथ को समझ सकें और अपनी खुशी को फिर से पा सकें।",
@@ -513,7 +513,7 @@ const resources = {
           },
           history: {
             label: "इतिहास:",
-            text: "प्रसिद्ध महामहोपाध्याय, ज्योतिष में ज्ञान और सेवा की परंपरा को आगे बढ़ाते हुए।",
+            text: "प्रसिद्ध ज्योतिषाचार्य, ज्योतिष में ज्ञान और सेवा की परंपरा को आगे बढ़ाते हुए।",
           },
           expertise: {
             label: "विशेषज्ञता:",
