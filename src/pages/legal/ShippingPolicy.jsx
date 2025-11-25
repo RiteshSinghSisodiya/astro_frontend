@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 
 export default function ShippingPolicy() {
   const { t } = useTranslation();
+  const dmLi2 = t("shipping.dm_li2");
 
   return (
     <PageShell title={t("shipping.title")}>
@@ -46,7 +47,7 @@ export default function ShippingPolicy() {
           <p className="text-white/80 leading-relaxed">{t("shipping.dm_p1")}</p>
           <ul className="list-disc pl-6 text-white/80 mt-3 space-y-1">
             <li>{t("shipping.dm_li1")}</li>
-            <li>{t("shipping.dm_li2")}</li>
+            {dmLi2 ? <li>{dmLi2}</li> : null}
           </ul>
           <p className="mt-3 text-white/80">{t("shipping.no_physical")}</p>
         </div>
