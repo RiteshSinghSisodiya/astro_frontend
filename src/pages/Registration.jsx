@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Country, State, City } from "country-state-city";
 import { useNavigate, useLocation } from "react-router-dom";
@@ -8,6 +8,14 @@ export default function Registration() {
   const { t } = useTranslation();
   const navigate = useNavigate();
 
+  // If user navigates directly to /register without selecting a service,
+  // redirect them to the services page to choose a service first.
+  useEffect(() => {
+    if (!state?.selectedService) {
+      navigate("/service", { replace: true });
+    }
+  }, [state, navigate]);
+
   // Calculate GST-inclusive price
   const calculateGSTPrice = (basePrice) => {
     const gst = Math.round(basePrice * 0.18);
@@ -15,7 +23,9 @@ export default function Registration() {
     return { basePrice, gst, totalPrice };
   };
 
-  const servicePrice = state?.price || 1;
+  // If user navigates directly to /register there may be no service selected.
+  // Use 0 as the default price so we don't show a misleading amount like ₹1.
+  const servicePrice = Number(state?.price ?? 0);
   const { basePrice, gst, totalPrice } = calculateGSTPrice(servicePrice);
 
   const [formData, setFormData] = useState({
@@ -27,7 +37,7 @@ export default function Registration() {
     country: "",
     state: "",
     city: "",
-    amount: totalPrice, // Use GST-inclusive price
+    amount: totalPrice, // Use GST-inclusive price (0 if no service selected)
   });
 
   const countries = useMemo(() => Country.getAllCountries(), []);
