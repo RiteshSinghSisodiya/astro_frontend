@@ -8,7 +8,7 @@ import zodiacImg from "../assets/zodiac.jpg";
 
 const SERVICES = [
   { id: 'kundli_reading', price: 2100 },
-  { id: 'kundli_making', price: 1 }, 
+  { id: 'kundli_making', price: 501 }, 
   { id: 'marriage_matching', price: 3100 },
   { id: 'business', price: 501 },
   { id: 'remedies', price: 501 },

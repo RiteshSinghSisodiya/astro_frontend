@@ -4,7 +4,7 @@ import astroBg from '../assets/astro.jpg'
 import ReactQRCode from 'react-qr-code'
 
 // Use environment-driven API base URL, fallback to local dev
-const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5080';
+const API_BASE = import.meta.env.VITE_API_BASE_URL || 'https://astro-backend-txdw.onrender.com';
 
 export default function Payment() {
   const { state } = useLocation()
