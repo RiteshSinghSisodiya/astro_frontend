@@ -4,7 +4,7 @@ import astroBg from '../assets/astro.jpg'
 import ReactQRCode from 'react-qr-code'
 
 // Use environment-driven API base URL, fallback to local dev
-const API_BASE = import.meta.env.VITE_API_BASE_URL || 'https://astro-backend-txdw.onrender.com';
+const API_BASE = import.meta.env.VITE_API_BASE_URL;
 
 export default function Payment() {
   const { state } = useLocation()
@@ -136,7 +136,7 @@ export default function Payment() {
               </div>
               <p className="text-white/80">Scan with your UPI/payment app to pay.</p>
               <div className="mt-4 text-left">
-                <label className="block text-white/90 mb-2">UPI Reference Number</label>
+                <label className="block text-white/90 mb-2">UPI Reference Number / UTR Number</label>
                 <input
                   className="p-3 border rounded bg-white/90 w-full"
                   placeholder="Enter UPI transaction reference number"
