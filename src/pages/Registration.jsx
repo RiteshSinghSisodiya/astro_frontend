@@ -2,90 +2,18 @@ import { useState, useMemo, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Country, State, City } from "country-state-city";
 import { useNavigate, useLocation } from "react-router-dom";
-import isoCountries from "i18n-iso-countries";
-import hiLocale from "i18n-iso-countries/langs/hi.json";
-
-// Register Hindi locale for country names
-isoCountries.registerLocale(hiLocale);
-
-// Basic Hindi mappings for Indian states and common cities
-const HI_STATE_BY_NAME = {
-  "Andhra Pradesh": "आंध्र प्रदेश",
-  "Arunachal Pradesh": "अरुणाचल प्रदेश",
-  "Assam": "असम",
-  "Bihar": "बिहार",
-  "Chhattisgarh": "छत्तीसगढ़",
-  "Goa": "गोवा",
-  "Gujarat": "गुजरात",
-  "Haryana": "हरियाणा",
-  "Himachal Pradesh": "हिमाचल प्रदेश",
-  "Jharkhand": "झारखंड",
-  "Karnataka": "कर्नाटक",
-  "Kerala": "केरल",
-  "Madhya Pradesh": "मध्य प्रदेश",
-  "Maharashtra": "महाराष्ट्र",
-  "Manipur": "मणिपुर",
-  "Meghalaya": "मेघालय",
-  "Mizoram": "मिज़ोरम",
-  "Nagaland": "नगालैंड",
-  "Odisha": "ओडिशा",
-  "Punjab": "पंजाब",
-  "Rajasthan": "राजस्थान",
-  "Sikkim": "सिक्किम",
-  "Tamil Nadu": "तमिलनाडु",
-  "Telangana": "तेलंगाना",
-  "Tripura": "त्रिपुरा",
-  "Uttar Pradesh": "उत्तर प्रदेश",
-  "Uttarakhand": "उत्तराखंड",
-  "West Bengal": "पश्चिम बंगाल",
-  "Andaman and Nicobar Islands": "अंडमान और निकोबार द्वीपसमूह",
-  "Chandigarh": "चंडीगढ़",
-  "Dadra and Nagar Haveli and Daman and Diu": "दादरा और नगर हवेली और दमन और दीव",
-  "Delhi": "दिल्ली",
-  "Jammu and Kashmir": "जम्मू और कश्मीर",
-  "Ladakh": "लद्दाख",
-  "Lakshadweep": "लक्षद्वीप",
-  "Puducherry": "पुदुचेरी"
-};
-
-const HI_CITY_BY_NAME = {
-  "Delhi": "दिल्ली",
-  "New Delhi": "नई दिल्ली",
-  "Mumbai": "मुंबई",
-  "Kolkata": "कोलकाता",
-  "Chennai": "चेन्नई",
-  "Bengaluru": "बेंगलुरु",
-  "Bangalore": "बेंगलुरु",
-  "Hyderabad": "हैदराबाद",
-  "Pune": "पुणे",
-  "Ahmedabad": "अहमदाबाद",
-  "Jaipur": "जयपुर",
-  "Lucknow": "लखनऊ",
-  "Noida": "नोएडा",
-  "Greater Noida": "ग्रेटर नोएडा",
-  "Varanasi": "वाराणसी",
-  "Kanpur": "कानपुर",
-  "Patna": "पटना",
-  "Bhopal": "भोपाल",
-  "Indore": "इंदौर",
-  "Surat": "सूरत",
-  "Nagpur": "नागपुर",
-  "Vadodara": "वडोदरा"
-};
-
-// Helper function to get Hindi names
-function toHindiDevanagari(name, type) {
-  if (!name) return "";
-  if (type === "state") return HI_STATE_BY_NAME[name] || name;
-  if (type === "city") return HI_CITY_BY_NAME[name] || name;
-  return name;
-}
+import {
+  isHindiLang,
+  getHindiCountryLabel,
+  getHindiStateLabel,
+  getHindiCityLabel,
+} from "../utils/locationLabels";
 
 export default function Registration() {
   const { state } = useLocation();
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
-  const isHindi = i18n.language?.startsWith("hi");
+  const isHindi = isHindiLang(i18n.language);
 
   // If user navigates directly to /register without selecting a service,
   // redirect them to the services page to choose a service first.
@@ -229,9 +157,7 @@ export default function Registration() {
                 <option value="">{t("country")}</option>
                 {countries.map((c) => (
                   <option key={c.isoCode} value={c.isoCode}>
-                    {isHindi
-                      ? isoCountries.getName(c.isoCode, "hi") || c.name
-                      : c.name}
+                    {isHindi ? getHindiCountryLabel(c.isoCode) : c.name}
                   </option>
                 ))}
               </select>
@@ -248,7 +174,7 @@ export default function Registration() {
                 {states.map((s) => (
                   <option key={s.isoCode} value={s.isoCode}>
                     {isHindi
-                      ? toHindiDevanagari(s.name, "state")
+                      ? getHindiStateLabel(formData.country, s.isoCode)
                       : s.name}
                   </option>
                 ))}
@@ -266,7 +192,7 @@ export default function Registration() {
                 {cities.map((ci) => (
                   <option key={ci.name} value={ci.name}>
                     {isHindi
-                      ? toHindiDevanagari(ci.name, "city")
+                      ? getHindiCityLabel(ci.name)
                       : ci.name}
                   </option>
                 ))}
