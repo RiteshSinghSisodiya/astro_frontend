@@ -4,7 +4,6 @@ import { Country, State, City } from "country-state-city";
 import { useNavigate, useLocation } from "react-router-dom";
 import isoCountries from "i18n-iso-countries";
 import hiLocale from "i18n-iso-countries/langs/hi.json";
-import Sanscript from "@indic-transliteration/sanscript";
 
 // Register Hindi locale for country names
 isoCountries.registerLocale(hiLocale);
@@ -74,30 +73,12 @@ const HI_CITY_BY_NAME = {
   "Vadodara": "वडोदरा"
 };
 
-function toHindiDevanagari(name) {
+// Helper function to get Hindi names
+function toHindiDevanagari(name, type) {
   if (!name) return "";
-  const src = String(name)
-    .toLowerCase()
-    .replace(/\s+/g, " ")
-    .replace(/aa/g, "A")
-    .replace(/ee/g, "I")
-    .replace(/ii/g, "I")
-    .replace(/oo/g, "U")
-    .replace(/uu/g, "U")
-    .replace(/kh/g, "kh")
-    .replace(/gh/g, "gh")
-    .replace(/chh/g, "chh")
-    .replace(/ch/g, "ch")
-    .replace(/jh/g, "jh")
-    .replace(/th/g, "th")
-    .replace(/dh/g, "dh")
-    .replace(/ph/g, "ph")
-    .replace(/bh/g, "bh")
-    .replace(/sh/g, "sh")
-    .replace(/ai/g, "ai")
-    .replace(/au/g, "au");
-  const dev = Sanscript.t(src, "itrans", "devanagari", { syncope: true });
-  return dev || "";
+  if (type === "state") return HI_STATE_BY_NAME[name] || name;
+  if (type === "city") return HI_CITY_BY_NAME[name] || name;
+  return name;
 }
 
 export default function Registration() {
@@ -249,7 +230,7 @@ export default function Registration() {
                 {countries.map((c) => (
                   <option key={c.isoCode} value={c.isoCode}>
                     {isHindi
-                      ? (isoCountries.getName(c.isoCode, "hi") || toHindiDevanagari(c.name))
+                      ? isoCountries.getName(c.isoCode, "hi") || c.name
                       : c.name}
                   </option>
                 ))}
@@ -267,7 +248,7 @@ export default function Registration() {
                 {states.map((s) => (
                   <option key={s.isoCode} value={s.isoCode}>
                     {isHindi
-                      ? (HI_STATE_BY_NAME[s.name] || toHindiDevanagari(s.name))
+                      ? toHindiDevanagari(s.name, "state")
                       : s.name}
                   </option>
                 ))}
@@ -285,7 +266,7 @@ export default function Registration() {
                 {cities.map((ci) => (
                   <option key={ci.name} value={ci.name}>
                     {isHindi
-                      ? (HI_CITY_BY_NAME[ci.name] || toHindiDevanagari(ci.name))
+                      ? toHindiDevanagari(ci.name, "city")
                       : ci.name}
                   </option>
                 ))}
