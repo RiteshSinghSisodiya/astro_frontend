@@ -1,5 +1,6 @@
 import { useLocation, useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import astroBg from '../assets/astro.jpg'
 import ReactQRCode from 'react-qr-code'
 
@@ -9,6 +10,7 @@ const API_BASE = import.meta.env.VITE_API_BASE_URL;
 export default function Payment() {
   const { state } = useLocation()
   const navigate = useNavigate()
+  const { i18n } = useTranslation()
   const amount = state?.formData?.amount ?? state?.price ?? 1
   const [formData, setFormData] = useState(() => ({
     ...state?.formData,
@@ -66,19 +68,20 @@ export default function Payment() {
     }
     setConfirming(true)
     try {
+      const useHindi = isHindiLang(i18n.language)
       const payload = {
         email: formData.email,
         referenceNumber: ref,
         amount,
         orderId: qrOrder?.orderId,
         verificationToken: qrOrder?.verificationToken,
-        fullName: formData.fullName,
+        fullName: formData.fullName, // if the user typed Hindi, it stays Hindi
         phone: formData.phone,
         dob: formData.dob,
         birthTime: formData.birthTime,
-        country: formData.country,
-        state: formData.state,
-        city: formData.city,
+        country: useHindi ? getHindiCountryLabel(formData.country) : formData.country,
+        state: useHindi ? getHindiStateLabel(formData.country, formData.state) : formData.state,
+        city: useHindi ? getHindiCityLabel(formData.city) : formData.city,
       }
       const res = await fetch(`${API_BASE}/api/users/confirm-payment`, {
         method: 'POST',
@@ -189,3 +192,4 @@ export default function Payment() {
     </section>
   )
 }
+import { isHindiLang, getHindiCountryLabel, getHindiStateLabel, getHindiCityLabel } from '../utils/locationLabels'
